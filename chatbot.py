@@ -68,19 +68,25 @@ def build_index(df):
 # TÌM TRONG PDF
 # =========================
 def search_pdf(question):
+    q = question.lower()
+    words = [w for w in q.split() if len(w) > 2]
 
-    question_words = question.lower().split()
-
-    best_line = ""
+    best_line = None
     best_score = 0
 
     for line in pdf_lines:
+        l = line.lower()
+
+        # bỏ dòng tiêu đề quá chung
+        if len(l) < 20:
+            continue
 
         score = 0
-        for w in question_words:
-            if w in line.lower():
+        for w in words:
+            if w in l:
                 score += 1
 
+        # ưu tiên dòng có nhiều từ khóa hơn
         if score > best_score:
             best_score = score
             best_line = line
