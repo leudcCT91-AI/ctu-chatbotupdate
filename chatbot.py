@@ -77,10 +77,13 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
     if best_score < THRESHOLD:
 
         # thử tìm trong PDF
-        if user_question.lower() in pdf_text.lower():
-            return "Thông tin có trong tài liệu tuyển sinh CTU.", []
+        if "chỉ tiêu" in user_question.lower():
+    for line in pdf_text.split("\n"):
+        if "công nghệ sinh học" in line.lower():
+            return line, []
 
         return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
 
     answer = str(df.iloc[best_idx]["answer"])
+
     return answer, suggestions
