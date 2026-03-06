@@ -127,18 +127,18 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
         if len(parts) >= 6:
 
-        ma_nganh = parts[1]
-        ten_nganh = " ".join(parts[2:-2])
-        chi_tieu = parts[-2]
-        to_hop = parts[-1]
+            ma_nganh = parts[1]
+            ten_nganh = " ".join(parts[2:-2])
+            chi_tieu = parts[-2]
+            to_hop = parts[-1]
 
-        answer = f"""
+            answer = f"""
 Ngành: {ten_nganh}
 Mã ngành: {ma_nganh}
 Chỉ tiêu tuyển sinh: {chi_tieu}
 Tổ hợp xét tuyển: {to_hop}
 """
 
-        return answer, []
+            return answer, []
 
-    return pdf_answer, []
+        return pdf_answer, []
