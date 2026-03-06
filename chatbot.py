@@ -126,7 +126,26 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     pdf_answer = search_pdf(user_question)
 
     if pdf_answer:
-        return pdf_answer, []
+
+    parts = pdf_answer.split()
+
+    if len(parts) >= 5:
+
+        ma_nganh = parts[1]
+        ten_nganh = " ".join(parts[2:-2])
+        chi_tieu = parts[-2]
+        to_hop = parts[-1]
+
+        answer = f"""
+Ngành: {ten_nganh}
+Mã ngành: {ma_nganh}
+Chỉ tiêu tuyển sinh: {chi_tieu}
+Tổ hợp xét tuyển: {to_hop}
+"""
+
+        return answer, []
+
+    return pdf_answer, []
 
     # =====================
     # NẾU KHÔNG CÓ → TÌM FAQ
