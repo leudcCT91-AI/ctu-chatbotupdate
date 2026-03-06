@@ -1,3 +1,4 @@
+from pypdf import PdfReader
 import sys
 sys.stdin.reconfigure(encoding="utf-8")
 sys.stdout.reconfigure(encoding="utf-8")
@@ -11,7 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 FAQ_PATH = "faq.tsv"
 THRESHOLD = 0.30
 TOPK = 3
-
+pdf_text = load_pdf("tuyensinh_ctu.pdf")
 
 def topk_indices(sims: np.ndarray, k: int):
     k = min(k, sims.shape[0])
@@ -95,7 +96,11 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
     raw_top = topk_indices(sims, TOPK + 1)
     top_idx = [i for i in raw_top if i != best_idx][:TOPK]
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
+    if answer is None or similarity < 0.4:
 
+    if message.lower() in pdf_text.lower():
+
+        return "Thông tin trong tài liệu tuyển sinh:\n" + message, []
     if best_score < THRESHOLD:
         major = guess_major(user_question)
         s3 = (
@@ -145,4 +150,17 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
+    def load_pdf(file_path):
+
+    reader = PdfReader(file_path)
+
+    text = ""
+
+    for page in reader.pages:
+        t = page.extract_text()
+        if t:
+            text += t + "\n"
+
+    return text
