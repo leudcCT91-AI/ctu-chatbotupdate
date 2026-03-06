@@ -122,26 +122,23 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     pdf_answer = search_pdf(user_question)
 
     if pdf_answer:
-        return pdf_answer, []
 
-    # --------
-    # nếu không có → tìm FAQ
-    # --------
-    user_vec = vectorizer.transform([user_question])
+    parts = pdf_answer.split()
 
-    sims = cosine_similarity(user_vec, faq_matrix).flatten()
+    if len(parts) >= 6:
 
-    best_idx = int(np.argmax(sims))
-    best_score = float(sims[best_idx])
+        ma_nganh = parts[1]
+        ten_nganh = " ".join(parts[2:-2])
+        chi_tieu = parts[-2]
+        to_hop = parts[-1]
 
-    raw_top = topk_indices(sims, TOPK + 1)
-    top_idx = [i for i in raw_top if i != best_idx][:TOPK]
+        answer = f"""
+Ngành: {ten_nganh}
+Mã ngành: {ma_nganh}
+Chỉ tiêu tuyển sinh: {chi_tieu}
+Tổ hợp xét tuyển: {to_hop}
+"""
 
-    suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
+        return answer, []
 
-    if best_score < THRESHOLD:
-        return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
-
-    answer = str(df.iloc[best_idx]["answer"])
-
-    return answer, suggestions
+    return pdf_answer, []
