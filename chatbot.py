@@ -1,8 +1,4 @@
 from pypdf import PdfReader
-import sys
-sys.stdin.reconfigure(encoding="utf-8")
-sys.stdout.reconfigure(encoding="utf-8")
-
 import pandas as pd
 import numpy as np
 
@@ -10,22 +6,25 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-FAQ_PATH = "faq.tsv"
 PDF_PATH = "tuyensinh_ctu.pdf"
+FAQ_PATH = "faq.tsv"
 
 THRESHOLD = 0.35
 TOPK = 3
 
 
-# =========================
-# ĐỌC FILE PDF
-# =========================
-def load_pdf(file_path):
-    reader = PdfReader(file_path)
+# =====================
+# ĐỌC PDF
+# =====================
+def load_pdf(path):
+
+    reader = PdfReader(path)
+
     text = ""
 
     for page in reader.pages:
         t = page.extract_text()
+
         if t:
             text += t + "\n"
 
@@ -36,27 +35,29 @@ pdf_text = load_pdf(PDF_PATH)
 pdf_lines = [line.strip() for line in pdf_text.split("\n") if line.strip()]
 
 
-# =========================
+# =====================
 # LOAD FAQ
-# =========================
+# =====================
 def load_faq(path):
+
     df = pd.read_csv(path, sep="\t", encoding="utf-8-sig")
+
     df["question"] = df["question"].astype(str)
     df["answer"] = df["answer"].astype(str)
+
     return df
 
 
-# =========================
-# BUILD INDEX FAQ
-# =========================
+# =====================
+# BUILD INDEX
+# =====================
 def build_index(df):
 
     questions = df["question"].tolist()
 
     vectorizer = TfidfVectorizer(
         ngram_range=(1,2),
-        lowercase=True,
-        token_pattern=r"(?u)\b\w+\b"
+        lowercase=True
     )
 
     faq_matrix = vectorizer.fit_transform(questions)
@@ -64,29 +65,24 @@ def build_index(df):
     return vectorizer, faq_matrix
 
 
-# =========================
+# =====================
 # TÌM TRONG PDF
-# =========================
+# =====================
 def search_pdf(question):
-    q = question.lower()
-    words = [w for w in q.split() if len(w) > 2]
+
+    words = question.lower().split()
 
     best_line = None
     best_score = 0
 
     for line in pdf_lines:
-        l = line.lower()
-
-        # bỏ dòng tiêu đề quá chung
-        if len(l) < 20:
-            continue
 
         score = 0
+
         for w in words:
-            if w in l:
+            if w in line.lower():
                 score += 1
 
-        # ưu tiên dòng có nhiều từ khóa hơn
         if score > best_score:
             best_score = score
             best_line = line
@@ -97,9 +93,9 @@ def search_pdf(question):
     return None
 
 
-# =========================
-# TOP K
-# =========================
+# =====================
+# TOPK
+# =====================
 def topk_indices(sims, k):
 
     k = min(k, sims.shape[0])
@@ -110,9 +106,9 @@ def topk_indices(sims, k):
     return idx
 
 
-# =========================
+# =====================
 # GET RESPONSE
-# =========================
+# =====================
 def get_response(user_question, df, vectorizer, faq_matrix):
 
     user_question = user_question.strip().lower()
@@ -120,36 +116,19 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # =====================
-    # ƯU TIÊN TÌM TRONG PDF
-    # =====================
+    # --------
+    # tìm PDF trước
+    # --------
     pdf_answer = search_pdf(user_question)
 
-if pdf_answer:
-    parts = pdf_answer.split()
+    if pdf_answer:
+        return pdf_answer, []
 
-    if len(parts) >= 5:
-
-        ma_nganh = parts[1]
-        ten_nganh = " ".join(parts[2:-2])
-        chi_tieu = parts[-2]
-        to_hop = parts[-1]
-
-        answer = f"""
-Ngành: {ten_nganh}
-Mã ngành: {ma_nganh}
-Chỉ tiêu tuyển sinh: {chi_tieu}
-Tổ hợp xét tuyển: {to_hop}
-"""
-
-        return answer, []
-
-    return pdf_answer, []
-
-    # =====================
-    # NẾU KHÔNG CÓ → TÌM FAQ
-    # =====================
+    # --------
+    # nếu không có → tìm FAQ
+    # --------
     user_vec = vectorizer.transform([user_question])
+
     sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
     best_idx = int(np.argmax(sims))
