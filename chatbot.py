@@ -125,8 +125,7 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     # =====================
     pdf_answer = search_pdf(user_question)
 
-    if pdf_answer:
-
+if pdf_answer:
     parts = pdf_answer.split()
 
     if len(parts) >= 5:
