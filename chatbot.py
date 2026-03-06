@@ -109,14 +109,22 @@ def topk_indices(sims, k):
 # =========================
 def get_response(user_question, df, vectorizer, faq_matrix):
 
-    user_question = user_question.strip()
+    user_question = user_question.strip().lower()
 
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # --------
-    # tìm FAQ
-    # --------
+    # =====================
+    # ƯU TIÊN TÌM TRONG PDF
+    # =====================
+    pdf_answer = search_pdf(user_question)
+
+    if pdf_answer:
+        return pdf_answer, []
+
+    # =====================
+    # NẾU KHÔNG CÓ → TÌM FAQ
+    # =====================
     user_vec = vectorizer.transform([user_question])
     sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
@@ -128,19 +136,8 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
 
-
-    # --------
-    # nếu FAQ không khớp
-    # --------
     if best_score < THRESHOLD:
-
-        pdf_answer = search_pdf(user_question)
-
-        if pdf_answer:
-            return pdf_answer, []
-
         return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
-
 
     answer = str(df.iloc[best_idx]["answer"])
 
