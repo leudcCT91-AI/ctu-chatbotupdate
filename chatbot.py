@@ -123,9 +123,9 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
     if pdf_answer:
 
-    parts = pdf_answer.split()
+        parts = pdf_answer.split()
 
-    if len(parts) >= 6:
+        if len(parts) >= 6:
 
         ma_nganh = parts[1]
         ten_nganh = " ".join(parts[2:-2])
