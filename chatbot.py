@@ -99,6 +99,8 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
     if answer is None or similarity < 0.4:
 
     if message.lower() in pdf_text.lower():
+        answer = "Thông tin có trong tài liệu tuyển sinh."
+        return answer, []
 
         return "Thông tin trong tài liệu tuyển sinh:\n" + message, []
     if best_score < THRESHOLD:
@@ -164,3 +166,4 @@ def load_pdf(file_path):
             text += t + "\n"
 
     return text
+
