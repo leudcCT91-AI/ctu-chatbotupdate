@@ -1,0 +1,17 @@
+{
+  "hỏi_học_phí": {
+    "Công nghệ thông tin": "Học phí ngành Công nghệ thông tin tại ĐH Cần Thơ là 1.200.000 đồng/học kỳ (năm học 2025-2026).",
+    "Kinh tế": "Học phí ngành Kinh tế tại ĐH Cần Thơ là 900.000 đồng/học kỳ (năm học 2025-2026)."
+  },
+  "hỏi_điểm_chuẩn": {
+    "Công nghệ thông tin": "Điểm chuẩn ngành Công nghệ thông tin năm 2025 là 24.5 điểm (tổ hợp A00, A01).",
+    "Kinh tế": "Điểm chuẩn ngành Kinh tế năm 2025 là 22.0 điểm (tổ hợp A00, D01)."
+  },
+  "hỏi_ngành_học": {
+    "Công nghệ thông tin": "Ngành Công nghệ thông tin đào tạo kỹ năng lập trình, phát triển phần mềm, quản trị hệ thống, an toàn thông tin và trí tuệ nhân tạo.",
+    "Kinh tế": "Ngành Kinh tế đào tạo kiến thức về kinh tế vĩ mô, vi mô, tài chính, kế toán, quản trị kinh doanh."
+  },
+  "hỏi_học_bổng": {
+    "chung": "ĐH Cần Thơ có học bổng khuyến khích học tập và học bổng tài trợ. Điều kiện thường dựa trên kết quả học tập và không vi phạm quy chế."
+  }
+}
