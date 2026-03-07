@@ -145,21 +145,39 @@ Tổ hợp xét tuyển:
 # =====================
 def get_response(user_question, df, vectorizer, faq_matrix):
 
-    user_question = user_question.strip().lower()
+    user_question = normalize_text(user_question.strip())
 
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # 🔴 ƯU TIÊN TÌM PDF
-    pdf_line = search_pdf(user_question)
+    # ===== TÌM TRONG PDF TRƯỚC =====
+    pdf_answer = search_pdf(user_question)
 
-    if pdf_line:
+    if pdf_answer:
 
-        answer = format_pdf_answer(pdf_line)
+        parts = pdf_answer.split()
+
+        stt = parts[0]
+        ma_nganh = parts[1]
+        chi_tieu = parts[-5]
+        to_hop = parts[-4:]
+        ten_nganh = " ".join(parts[2:-5])
+
+        to_hop_text = "\n".join([f"• {t}" for t in to_hop])
+
+        answer = f"""
+Ngành: {ten_nganh}
+Mã ngành: {ma_nganh}
+STT: {stt}
+Chỉ tiêu tuyển sinh: {chi_tieu}
+
+Tổ hợp xét tuyển:
+{to_hop_text}
+"""
 
         return answer, []
 
-    # 🔵 KHÔNG CÓ TRONG PDF → TÌM FAQ
+    # ===== KHÔNG CÓ TRONG PDF → TÌM FAQ =====
     user_vec = vectorizer.transform([user_question])
     sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
