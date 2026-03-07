@@ -139,12 +139,13 @@ def format_pdf_answer(line):
     to_hop_text = "\n".join([f"• {t}" for t in to_hop])
 
     answer = f"""
-Ngành: {ten_nganh}
-Mã ngành: {ma_nganh}
-STT: {stt}
-Chỉ tiêu tuyển sinh: {chi_tieu}
+**Ngành:** {ten_nganh}  
+**Mã ngành:** {ma_nganh}  
+**STT:** {stt}  
+**Chỉ tiêu tuyển sinh:** {chi_tieu}  
 
-Tổ hợp xét tuyển:
+**Tổ hợp xét tuyển:**
+
 {to_hop_text}
 """
 
