@@ -603,3 +603,134 @@ id	group	question	answer
 603	sinh_vien	em đã gửi khiếu nại điểm nhưng không ai trả lời thì làm sao?	Bạn kiểm tra lại kênh gửi có đúng không và có nhận phản hồi tự động/biên nhận không. Nếu quá thời gian xử lý, bạn follow-up bằng cách gửi lại kèm thời điểm đã gửi và liên hệ trực tiếp giáo vụ khoa trong giờ hành chính.
 604	sinh_vien	em có thể nhờ lớp trưởng/cán sự học tập gửi khiếu nại điểm giúp không?	Có thể nhờ hỗ trợ tổng hợp thông tin, nhưng hồ sơ thường cần tên và MSSV của chính bạn, đôi khi cần chữ ký/ xác nhận cá nhân. Bạn hỏi giáo vụ khoa xem có chấp nhận gửi thay hay cần bạn đứng tên trực tiếp.
 605	sinh_vien	em muốn phúc khảo vì nghĩ giảng viên chấm “khắt khe” thì có được không?	Phúc khảo thường dựa trên đối chiếu bài làm và đáp án/thang điểm, không dựa trên cảm nhận. Nếu bạn có cơ sở cụ thể (thiếu điểm, chấm lệch thang, sai cộng điểm), hãy nêu rõ trong đơn để được xem xét khách quan.
+606	tuyen_sinh	Trường Đại học Cần Thơ có những phương thức tuyển sinh nào?	Trường có thể xét tuyển theo nhiều phương thức như điểm thi tốt nghiệp THPT, xét tuyển thẳng, ưu tiên xét tuyển và các phương thức khác theo đề án tuyển sinh từng năm.
+607	tuyen_sinh	Em muốn đăng ký xét tuyển vào Đại học Cần Thơ thì làm ở đâu?	Bạn theo dõi cổng thông tin tuyển sinh chính thức của trường và thực hiện đăng ký theo hướng dẫn của Bộ Giáo dục và Đào tạo cùng thông báo của trường.
+608	tuyen_sinh	Hồ sơ đăng ký xét tuyển vào CTU gồm những gì?	Hồ sơ cụ thể phụ thuộc phương thức xét tuyển, bạn nên xem thông báo tuyển sinh năm hiện hành để chuẩn bị đúng giấy tờ cần thiết.
+609	tuyen_sinh	Khi nào trường mở đăng ký xét tuyển đại học?	Thời gian đăng ký xét tuyển được công bố trong kế hoạch tuyển sinh từng năm trên website tuyển sinh của trường.
+610	tuyen_sinh	Em có thể đăng ký nhiều nguyện vọng vào CTU không?	Bạn có thể đăng ký nhiều nguyện vọng theo quy định tuyển sinh hiện hành và cần sắp xếp thứ tự nguyện vọng phù hợp.
+611	tuyen_sinh	Trường có xét tuyển thẳng không?	Có thể có xét tuyển thẳng hoặc ưu tiên xét tuyển theo quy định của Bộ Giáo dục và thông báo tuyển sinh từng năm của trường.
+612	nganh_hoc	Đại học Cần Thơ có những nhóm ngành đào tạo nào?	Trường đào tạo nhiều nhóm ngành như sư phạm, kinh tế, kỹ thuật, công nghệ, nông nghiệp, thủy sản, ngoại ngữ, khoa học xã hội và sức khỏe.
+613	nganh_hoc	Ngành Công nghệ thông tin của CTU học những gì?	Ngành Công nghệ thông tin thường học về lập trình, cơ sở dữ liệu, mạng máy tính, hệ điều hành, phát triển phần mềm và các học phần chuyên sâu khác.
+614	nganh_hoc	Ngành Kế toán ở CTU học những môn gì?	Ngành Kế toán thường học nguyên lý kế toán, kế toán tài chính, kế toán quản trị, kiểm toán, thuế và phân tích tài chính.
+615	nganh_hoc	Ngành nào ở CTU phù hợp với học sinh giỏi Toán?	Bạn có thể tham khảo các ngành như Công nghệ thông tin, Khoa học máy tính, Trí tuệ nhân tạo, Kỹ thuật, Tài chính hoặc Thống kê tùy sở thích.
+616	nganh_hoc	Em muốn học ngành sư phạm ở CTU thì có những lựa chọn nào?	CTU có nhiều ngành sư phạm như Sư phạm Toán, Sư phạm Vật lý, Sư phạm Hóa học, Sư phạm Sinh học, Sư phạm Ngữ văn, Sư phạm Lịch sử, Sư phạm Địa lý và các ngành khác.
+617	nganh_hoc	Học ngành Quản trị kinh doanh ở CTU ra làm gì?	Sinh viên ngành Quản trị kinh doanh có thể làm việc trong doanh nghiệp ở các vị trí kinh doanh, marketing, nhân sự, vận hành hoặc khởi nghiệp.
+618	diem_chuan	Điểm chuẩn Đại học Cần Thơ được công bố khi nào?	Điểm chuẩn thường được công bố sau khi có kết quả xử lý nguyện vọng theo lịch tuyển sinh từng năm.
+619	diem_chuan	Điểm chuẩn CTU có thay đổi qua từng năm không?	Có, điểm chuẩn thay đổi theo từng năm tùy vào số lượng thí sinh đăng ký, chỉ tiêu và mức độ cạnh tranh của từng ngành.
+620	diem_chuan	Ngành Kế toán của CTU năm 2025 lấy bao nhiêu điểm?	Theo phụ lục điểm chuẩn đại học chính quy năm 2025 của Trường Đại học Cần Thơ, ngành Kế toán có điểm chuẩn 22,61; riêng Kế toán học tại khu Sóc Trăng là 18,38. [file:886]
+621	diem_chuan	Ngành Công nghệ thông tin của CTU năm 2025 lấy bao nhiêu điểm?	Theo phụ lục điểm chuẩn năm 2025, ngành Công nghệ thông tin có điểm chuẩn 24,78; chương trình chất lượng cao là 20,25; học tại khu Hòa An là 21,15. [file:886]
+622	diem_chuan	Ngành Kỹ thuật phần mềm của CTU năm 2025 lấy bao nhiêu điểm?	Theo phụ lục điểm chuẩn năm 2025, ngành Kỹ thuật phần mềm có điểm chuẩn 23,05; chương trình chất lượng cao là 19,40. [file:886]
+623	diem_chuan	Ngành Thú y của CTU năm 2025 lấy bao nhiêu điểm?	Theo phụ lục điểm chuẩn năm 2025, ngành Thú y có điểm chuẩn 20,00; chương trình chất lượng cao là 18,00. [file:886]
+624	hoc_phi Học phí Đại học Cần Thơ được tính như thế nào?	Học phí thường được tính theo số tín chỉ đăng ký và mức thu của từng nhóm ngành theo quy định từng năm học.
+625	hoc_phi	Học phí giữa các ngành ở CTU có giống nhau không?	Không hoàn toàn giống nhau, vì mức học phí có thể khác theo nhóm ngành và chương trình đào tạo.
+626	hoc_phi	Khi nào sinh viên phải đóng học phí?	Thời gian đóng học phí thường được thông báo theo từng học kỳ trên cổng thông tin hoặc hệ thống quản lý đào tạo của trường.
+627	hoc_phi	Nếu đóng học phí trễ thì sao?	Sinh viên nên theo dõi thông báo chính thức của trường vì việc đóng học phí trễ có thể ảnh hưởng đến tình trạng học phần hoặc các quyền lợi liên quan.
+628	hoc_bong	CTU có học bổng cho sinh viên không?	Trường thường có các loại học bổng như học bổng khuyến khích học tập, học bổng tài trợ và hỗ trợ dành cho một số đối tượng theo quy định.
+629	hoc_bong	Điều kiện để nhận học bổng khuyến khích học tập là gì?	Điều kiện cụ thể phụ thuộc quy định từng năm, thường liên quan đến kết quả học tập, rèn luyện và số tín chỉ tích lũy hợp lệ.
+630	ky_tuc_xa	Sinh viên muốn đăng ký ký túc xá thì làm thế nào?	Sinh viên cần theo dõi thông báo đăng ký ký túc xá của trường hoặc đơn vị quản lý ký túc xá và thực hiện đăng ký theo hướng dẫn.
+631	ky_tuc_xa	Ở ký túc xá cần chuẩn bị giấy tờ gì?	Bạn nên xem thông báo tiếp nhận của ký túc xá vì mỗi đợt có thể yêu cầu giấy tờ và thủ tục khác nhau.
+632	hoc_phan	Đăng ký học phần ở CTU được thực hiện khi nào?	Sinh viên đăng ký học phần theo kế hoạch học kỳ và lịch đăng ký do trường công bố trên hệ thống quản lý đào tạo.
+633	hoc_phan	Nếu em không đăng ký được học phần mong muốn thì phải làm sao?	Bạn nên kiểm tra lại điều kiện tiên quyết, số chỗ còn trống và theo dõi các đợt điều chỉnh đăng ký học phần của trường.
+634	quy_che	Sinh viên bị cảnh báo học vụ khi nào?	Việc cảnh báo học vụ phụ thuộc vào kết quả học tập theo quy chế đào tạo áp dụng tại trường trong từng giai đoạn.
+635	quy_che	Nghỉ học tạm thời ở CTU cần làm gì?	Sinh viên cần làm đơn và thực hiện thủ tục theo hướng dẫn của khoa, cố vấn học tập hoặc phòng chức năng liên quan.
+636	tuyen_sinh	Em muốn thi vào Đại học Cần Thơ thì cần theo dõi thông tin ở đâu?	Bạn nên theo dõi website tuyển sinh chính thức của trường và các thông báo của Bộ Giáo dục và Đào tạo.
+637	tuyen_sinh	Đại học Cần Thơ có tuyển sinh trên toàn quốc không?	Thông tin phạm vi tuyển sinh được công bố trong đề án tuyển sinh từng năm của trường.
+638	tuyen_sinh	Em ở tỉnh xa có thể đăng ký vào CTU không?	Bạn có thể đăng ký xét tuyển nếu đáp ứng điều kiện của phương thức tuyển sinh mà trường công bố.
+639	tuyen_sinh	CTU có mấy đợt tuyển sinh trong năm?	Số đợt tuyển sinh phụ thuộc kế hoạch của từng năm và từng hệ đào tạo, bạn nên xem thông báo chính thức.
+640	tuyen_sinh	Sau khi có điểm thi THPT em cần làm gì để xét tuyển CTU?	Bạn cần đăng ký nguyện vọng đúng thời gian và kiểm tra kỹ mã trường, mã ngành, phương thức xét tuyển.
+641	tuyen_sinh	Em có thể đổi nguyện vọng vào CTU sau khi đăng ký không?	Việc điều chỉnh nguyện vọng phụ thuộc lịch và quy định tuyển sinh hiện hành của Bộ Giáo dục và Đào tạo.
+642	tuyen_sinh	CTU có xét tuyển bằng học bạ không?	Phương thức xét tuyển được công bố theo từng năm nên bạn cần xem đề án tuyển sinh hiện hành của trường.
+643	tuyen_sinh	Em cần chuẩn bị gì trước khi đăng ký nguyện vọng vào CTU?	Bạn nên chuẩn bị thông tin cá nhân, mã trường, mã ngành, phương thức xét tuyển và các giấy tờ liên quan.
+644	tuyen_sinh	Khi đăng ký vào CTU em có cần nộp hồ sơ giấy ngay không?	Tùy từng phương thức xét tuyển và từng giai đoạn, bạn cần làm theo hướng dẫn cụ thể trong thông báo tuyển sinh.
+645	tuyen_sinh	Làm sao biết em đủ điều kiện đăng ký vào ngành mình thích ở CTU?	Bạn nên kiểm tra tổ hợp xét tuyển, ngưỡng đầu vào, điều kiện phụ và thông báo tuyển sinh của ngành đó.
+646	diem_chuan	Điểm chuẩn là gì?	Điểm chuẩn là mức điểm trúng tuyển của một ngành theo từng phương thức xét tuyển trong một năm tuyển sinh.
+647	diem_chuan	Xem điểm chuẩn CTU ở đâu cho chính xác?	Bạn nên xem trên website tuyển sinh chính thức hoặc thông báo điểm chuẩn do trường công bố.
+648	diem_chuan	Điểm chuẩn năm trước có dùng để tham khảo năm nay được không?	Có, điểm chuẩn năm trước là dữ liệu tham khảo hữu ích nhưng không đảm bảo giống hoàn toàn ở năm sau.
+649	diem_chuan	Ngành hot ở CTU có điểm chuẩn cao hơn không?	Thông thường các ngành có nhiều thí sinh quan tâm sẽ có mức cạnh tranh cao hơn và điểm chuẩn có thể cao hơn.
+650	diem_chuan	Điểm chuẩn các ngành sư phạm ở CTU có cao không?	Nhóm ngành sư phạm thường có mức cạnh tranh riêng, bạn nên xem điểm chuẩn từng năm để đánh giá chính xác hơn.
+651	diem_chuan	Nếu điểm em sát điểm chuẩn thì có nên đặt nguyện vọng vào CTU không?	Bạn vẫn có thể đặt nếu yêu thích ngành, nhưng nên sắp xếp thêm các nguyện vọng an toàn hơn.
+652	diem_chuan	Điểm chuẩn có khác giữa chương trình thường và chất lượng cao không?	Có thể khác, vì mỗi chương trình có chỉ tiêu và mức cạnh tranh riêng.
+653	diem_chuan	Điểm chuẩn có khác giữa cơ sở chính và khu Hòa An không?	Có thể khác tùy ngành và chỉ tiêu của từng địa điểm đào tạo.
+654	nganh_hoc	CTU có đào tạo ngành Công nghệ thông tin không?	Có, đây là một trong những ngành được nhiều thí sinh quan tâm tại trường.
+655	nganh_hoc	CTU có ngành Trí tuệ nhân tạo không?	Bạn nên xem danh mục ngành tuyển sinh từng năm để biết trường có mở ngành hoặc chuyên ngành liên quan hay không.
+656	nganh_hoc	Em thích kinh tế thì nên tham khảo ngành nào ở CTU?	Bạn có thể tham khảo các ngành như Kinh tế, Quản trị kinh doanh, Marketing, Kế toán, Kiểm toán hoặc Tài chính - Ngân hàng.
+657	nganh_hoc	Em học khá tiếng Anh thì nên chọn ngành nào ở CTU?	Bạn có thể tham khảo Ngôn ngữ Anh, Sư phạm Tiếng Anh hoặc các ngành có môi trường học tập gắn với ngoại ngữ.
+658	nganh_hoc	CTU có đào tạo nhóm ngành nông nghiệp không?	Có, đây là một thế mạnh của trường với nhiều ngành thuộc nông nghiệp, cây trồng, chăn nuôi và thủy sản.
+659	nganh_hoc	Em thích làm việc với máy tính thì nên chọn ngành nào?	Bạn có thể cân nhắc Công nghệ thông tin, Khoa học máy tính, Kỹ thuật phần mềm, Hệ thống thông tin hoặc Mạng máy tính.
+660	nganh_hoc	Ngành Kế toán và Kiểm toán khác nhau thế nào?	Kế toán thiên về ghi nhận và phân tích số liệu tài chính, còn Kiểm toán thiên về kiểm tra và đánh giá tính trung thực của báo cáo.
+661	nganh_hoc	Ngành Quản trị kinh doanh học có khó không?	Độ khó phụ thuộc năng lực và cách học của bạn, nhưng ngành này cần kỹ năng giao tiếp, làm việc nhóm và tư duy tổ chức.
+662	nganh_hoc	Ngành nào phù hợp với học sinh thích sinh học?	Bạn có thể tham khảo Thú y, Công nghệ sinh học, Sinh học, Sư phạm Sinh học hoặc các ngành liên quan nông nghiệp.
+663	nganh_hoc	Ngành nào ở CTU dễ xin việc?	Không có ngành nào đảm bảo việc làm tuyệt đối; cơ hội việc làm phụ thuộc nhu cầu thị trường, kỹ năng và kết quả học tập của bạn.
+664	hoc_phi	Học phí CTU có cao không?	Học phí phụ thuộc nhóm ngành và số tín chỉ đăng ký, bạn nên xem mức thu của năm tuyển sinh tương ứng.
+665	hoc_phi	Học phí ngành kỹ thuật có khác ngành xã hội không?	Có thể khác, vì nhiều trường áp dụng mức học phí theo nhóm ngành đào tạo.
+666	hoc_phi	Học phí được đóng theo năm hay theo học kỳ?	Thông thường sinh viên đóng học phí theo từng học kỳ.
+667	hoc_phi	Tân sinh viên có phải đóng học phí ngay khi nhập học không?	Bạn cần xem thông báo nhập học vì trường sẽ hướng dẫn cụ thể các khoản cần hoàn tất.
+668	hoc_phi	CTU có cho đóng học phí nhiều đợt không?	Việc đóng học phí theo một lần hay nhiều giai đoạn phụ thuộc quy định từng học kỳ hoặc thông báo của trường.
+669	hoc_phi	Nếu gia đình khó khăn thì có hỗ trợ học phí không?	Bạn nên tìm hiểu các chính sách miễn giảm, hỗ trợ hoặc học bổng của trường và của địa phương.
+670	hoc_phi	Học phí có tăng qua từng năm không?	Có thể có điều chỉnh theo lộ trình và quy định áp dụng trong từng năm học.
+671	hoc_bong	Tân sinh viên có cơ hội nhận học bổng không?	Có thể có, tùy chính sách học bổng đầu vào hoặc học bổng tài trợ từng năm.
+672	hoc_bong	Học sinh giỏi có được xét học bổng khi vào CTU không?	Một số học bổng đầu vào hoặc học bổng khuyến khích có thể xét dựa trên thành tích học tập, nhưng bạn cần xem điều kiện cụ thể.
+673	hoc_bong	Học bổng của trường thường xét theo tiêu chí nào?	Tiêu chí thường liên quan đến thành tích học tập, hoàn cảnh, rèn luyện hoặc chương trình tài trợ.
+674	hoc_bong	Em muốn săn học bổng khi vào đại học thì nên chuẩn bị gì?	Bạn nên cố gắng giữ thành tích tốt, theo dõi thông báo học bổng và chuẩn bị hồ sơ cá nhân đầy đủ.
+675	hoc_bong	CTU có học bổng cho sinh viên khó khăn không?	Trường có thể có các nguồn hỗ trợ hoặc học bổng dành cho sinh viên có hoàn cảnh khó khăn theo từng chương trình.
+676	ky_tuc_xa	Tân sinh viên có được đăng ký ký túc xá không?	Thông thường tân sinh viên có thể đăng ký nếu trường hoặc đơn vị quản lý ký túc xá có thông báo tiếp nhận.
+677	ky_tuc_xa	Đăng ký ký túc xá khi nào?	Thời gian đăng ký ký túc xá thường được thông báo gần thời điểm nhập học hoặc đầu học kỳ.
+678	ky_tuc_xa	Ở ký túc xá có an ninh không?	Bạn nên xem nội quy và thông tin từ đơn vị quản lý ký túc xá để biết rõ các quy định về an ninh, giờ giấc và sinh hoạt.
+679	ky_tuc_xa	Tân sinh viên ở tỉnh xa có ưu tiên ký túc xá không?	Việc ưu tiên phụ thuộc quy định xét chỗ ở của ký túc xá trong từng giai đoạn.
+680	ky_tuc_xa	Nếu không ở ký túc xá thì em có thể thuê trọ gần trường không?	Bạn có thể thuê trọ bên ngoài, nhưng nên cân nhắc khoảng cách, chi phí và mức độ an toàn.
+681	tuyen_sinh	Nếu em chưa chắc chọn ngành nào thì nên làm gì?	Bạn nên xác định sở thích, thế mạnh môn học, mục tiêu nghề nghiệp và tham khảo chương trình đào tạo của từng ngành.
+682	tuyen_sinh	Em nên đặt CTU ở nguyện vọng mấy?	Bạn nên đặt nguyện vọng theo mức độ yêu thích thật sự kết hợp với khả năng trúng tuyển của bản thân.
+683	tuyen_sinh	Làm sao để tránh nhầm mã ngành khi đăng ký?	Bạn nên đối chiếu mã ngành trên website tuyển sinh chính thức và kiểm tra lại trước khi xác nhận nguyện vọng.
+684	tuyen_sinh	Em có thể vừa đăng ký CTU vừa đăng ký trường khác không?	Có, bạn có thể đăng ký nhiều nguyện vọng ở nhiều trường theo quy định tuyển sinh hiện hành.
+685	tuyen_sinh	Sau khi trúng tuyển vào CTU em cần làm gì tiếp theo?	Bạn cần xác nhận nhập học và thực hiện đầy đủ các bước theo thông báo nhập học của trường.
+stt	group	question	answer
+686	hoc_phan	Đăng ký học phần ở CTU là gì?	Đó là quá trình sinh viên chọn các môn học sẽ học trong một học kỳ theo kế hoạch đào tạo.
+687	hoc_phan	Khi nào mở đăng ký học phần?	Thời gian đăng ký học phần được trường công bố theo từng học kỳ trên hệ thống quản lý đào tạo.
+688	hoc_phan	Em quên đăng ký học phần thì phải làm sao?	Bạn nên kiểm tra ngay các đợt bổ sung hoặc liên hệ đơn vị quản lý đào tạo để được hướng dẫn.
+689	hoc_phan	Tại sao em không đăng ký được một môn?	Có thể do trùng lịch, hết chỗ, chưa đủ điều kiện tiên quyết hoặc chưa đến lượt đăng ký.
+690	hoc_phan	Học phần tiên quyết là gì?	Đó là học phần bạn phải hoàn thành trước khi được đăng ký một học phần khác có liên quan.
+691	hoc_phan	Học phần song hành là gì?	Đó là học phần có thể học cùng lúc với một học phần khác theo quy định của chương trình đào tạo.
+692	hoc_phan	Em muốn hủy học phần đã đăng ký thì làm sao?	Bạn cần thực hiện trong thời gian cho phép theo lịch điều chỉnh học phần của trường.
+693	hoc_phan	Có được đăng ký vượt số tín chỉ không?	Việc đăng ký vượt số tín chỉ phụ thuộc quy chế đào tạo và kết quả học tập của sinh viên.
+694	hoc_phan	Học lại môn rớt đăng ký ở đâu?	Bạn thường đăng ký học lại trên hệ thống đăng ký học phần khi trường mở lớp phù hợp.
+695	hoc_phan	Học cải thiện điểm có được không?	Tùy quy chế đào tạo áp dụng, sinh viên có thể được học cải thiện trong một số trường hợp.
+696	quy_che	Cảnh báo học vụ là gì?	Đó là trạng thái nhắc nhở sinh viên khi kết quả học tập chưa đạt mức yêu cầu theo quy chế.
+697	quy_che	Khi nào sinh viên bị buộc thôi học?	Điều này phụ thuộc quy chế đào tạo và kết quả học tập, rèn luyện của sinh viên trong từng giai đoạn.
+698	quy_che	Bảo lưu kết quả học tập là gì?	Đó là việc tạm ngưng học nhưng giữ lại kết quả đã đạt theo quy định của trường.
+699	quy_che	Em muốn nghỉ học tạm thời thì làm gì?	Bạn cần làm đơn và hoàn thành thủ tục theo hướng dẫn của khoa hoặc phòng chức năng liên quan.
+700	quy_che	Sinh viên có được học song ngành không?	Điều này phụ thuộc quy định đào tạo và điều kiện học tập của từng giai đoạn.
+701	quy_che	Em muốn chuyển ngành thì phải làm sao?	Bạn cần theo dõi thông báo, điều kiện chuyển ngành và nộp hồ sơ theo hướng dẫn của trường.
+702	quy_che	Thôi học tự nguyện cần làm thủ tục gì?	Sinh viên cần làm đơn và hoàn tất các thủ tục hành chính theo quy định hiện hành.
+703	quy_che	Điểm rèn luyện dùng để làm gì?	Điểm rèn luyện thường được dùng để đánh giá ý thức, xét học bổng, khen thưởng hoặc một số quyền lợi sinh viên.
+704	quy_che	Nếu em nghỉ học nhiều buổi thì có bị cấm thi không?	Tùy quy định từng học phần và giảng viên, việc nghỉ quá số buổi cho phép có thể ảnh hưởng điều kiện dự thi.
+705	quy_che	Làm sao biết mình còn nợ điều kiện tốt nghiệp không?	Bạn nên kiểm tra số tín chỉ tích lũy, các học phần bắt buộc, điều kiện ngoại ngữ, giáo dục thể chất và quốc phòng theo chương trình.
+706	hoc_phi	Xem công nợ học phí ở đâu?	Sinh viên thường xem công nợ học phí trên hệ thống quản lý đào tạo hoặc cổng thông tin sinh viên.
+707	hoc_phi	Nếu đóng sai số tiền học phí thì sao?	Bạn nên lưu lại chứng từ và liên hệ bộ phận phụ trách tài chính để được kiểm tra, đối soát.
+708	hoc_phi	Đóng học phí online như thế nào?	Cách đóng học phí online phụ thuộc hướng dẫn thanh toán mà trường công bố cho từng học kỳ.
+709	hoc_phi	Khi nào được xác nhận đã đóng học phí?	Trạng thái xác nhận thường cập nhật sau khi hệ thống ghi nhận giao dịch thành công.
+710	hoc_phi	Học phí học lại có tính riêng không?	Thông thường học lại được tính theo số tín chỉ mà sinh viên đăng ký trong học kỳ.
+711	hoc_phi	Nếu chưa đóng học phí thì có đăng ký học phần được không?	Tùy quy định hệ thống và thông báo từng học kỳ, việc nợ học phí có thể ảnh hưởng đến đăng ký học phần.
+712	hoc_phi	Có thể xin gia hạn học phí không?	Bạn nên liên hệ đơn vị phụ trách để biết trường hợp của mình có được xem xét hay không.
+713	hoc_bong	Làm sao biết em có được học bổng không?	Bạn nên theo dõi thông báo từ trường, khoa hoặc hệ thống sinh viên để biết danh sách và điều kiện xét.
+714	hoc_bong	Học bổng khuyến khích học tập xét theo học kỳ hay năm?	Điều này phụ thuộc quy định xét học bổng được áp dụng trong từng giai đoạn.
+715	hoc_bong	Bị nợ môn có được xét học bổng không?	Khả năng được xét phụ thuộc tiêu chí học bổng, số tín chỉ đạt và quy định của trường.
+716	hoc_bong	Điểm rèn luyện thấp có ảnh hưởng học bổng không?	Có thể có ảnh hưởng vì nhiều loại học bổng xét đồng thời kết quả học tập và rèn luyện.
+717	hoc_bong	Sinh viên năm nhất có học bổng không?	Có thể có học bổng đầu vào hoặc học bổng hỗ trợ tùy chính sách từng năm.
+718	ky_tuc_xa	Em muốn gia hạn ở ký túc xá thì làm sao?	Bạn cần theo dõi thông báo gia hạn hoặc đăng ký lại từ đơn vị quản lý ký túc xá.
+719	ky_tuc_xa	Nộp tiền ký túc xá ở đâu?	Việc nộp phí ký túc xá thực hiện theo hướng dẫn của đơn vị quản lý ký túc xá.
+720	ky_tuc_xa	Ở ký túc xá có nội quy gì quan trọng?	Bạn cần chú ý giờ giấc, an ninh, vệ sinh, tài sản chung và các quy định sinh hoạt tập thể.
+721	ky_tuc_xa	Mất thẻ hoặc giấy tờ liên quan ký túc xá thì sao?	Bạn nên báo ngay cho bộ phận quản lý ký túc xá để được hướng dẫn xử lý.
+722	ky_tuc_xa	Em muốn chuyển phòng ký túc xá thì làm sao?	Việc chuyển phòng phụ thuộc chỗ trống và sự chấp thuận của đơn vị quản lý ký túc xá.
+723	lich_hoc	Xem thời khóa biểu ở đâu?	Sinh viên thường xem thời khóa biểu trên hệ thống quản lý đào tạo hoặc cổng thông tin sinh viên.
+724	lich_hoc	Xem lịch thi ở đâu?	Lịch thi thường được công bố trên hệ thống hoặc theo thông báo từ khoa và giảng viên.
+725	lich_hoc	Nếu lịch học bị trùng thì làm sao?	Bạn nên kiểm tra lại học phần đã đăng ký và liên hệ cố vấn học tập hoặc đơn vị quản lý đào tạo nếu cần.
+726	lich_hoc	Tại sao thời khóa biểu thay đổi?	Thời khóa biểu có thể thay đổi do điều chỉnh phòng học, giảng viên hoặc kế hoạch đào tạo.
+727	lich_hoc	Làm sao biết môn học online hay học trực tiếp?	Bạn nên xem thông báo cụ thể của học phần trên hệ thống hoặc từ giảng viên phụ trách.
+728	giay_to	Em muốn xin giấy xác nhận sinh viên thì làm ở đâu?	Bạn thực hiện theo hướng dẫn của trường hoặc khoa về thủ tục cấp giấy xác nhận sinh viên.
+729	giay_to	Xin bảng điểm tạm thời như thế nào?	Bạn cần làm theo quy trình cấp bảng điểm do trường hoặc đơn vị đào tạo quy định.
+730	giay_to	Làm lại thẻ sinh viên bị mất ở đâu?	Bạn nên liên hệ bộ phận phụ trách công tác sinh viên hoặc đơn vị phát hành thẻ để được hướng dẫn.
+731	giay_to	Em cần giấy giới thiệu thực tập thì làm sao?	Bạn liên hệ khoa hoặc bộ phận phụ trách đào tạo để làm thủ tục xin giấy giới thiệu.
+732	tot_nghiep	Khi nào sinh viên được xét tốt nghiệp?	Sinh viên được xét tốt nghiệp khi đáp ứng đủ các điều kiện của chương trình đào tạo và quy định hiện hành.
+733	tot_nghiep	Điều kiện tốt nghiệp gồm những gì?	Thông thường gồm đủ số tín chỉ, hoàn thành học phần bắt buộc, đạt chuẩn đầu ra và không còn nghĩa vụ học vụ liên quan.
+734	tot_nghiep	Em còn nợ một môn có được xét tốt nghiệp không?	Thông thường sinh viên cần hoàn thành đầy đủ các học phần theo chương trình trước khi được xét tốt nghiệp.
+735	tot_nghiep	Bao giờ có bằng tốt nghiệp sau khi được công nhận tốt nghiệp?	Thời gian cấp bằng phụ thuộc quy trình xử lý hồ sơ và thông báo của trường trong từng đợt.
