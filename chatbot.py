@@ -1,114 +1,57 @@
-from pypdf import PdfReader
 import pandas as pd
 import numpy as np
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-PDF_PATH = "tuyensinh_ctu.pdf"
 FAQ_PATH = "faq.tsv"
-
-THRESHOLD = 0.35
+THRESHOLD = 0.30
 TOPK = 3
 
 
-# =====================
-# ĐỌC PDF
-# =====================
-def load_pdf(path):
-
-    reader = PdfReader(path)
-
-    text = ""
-
-    for page in reader.pages:
-        t = page.extract_text()
-
-        if t:
-            text += t + "\n"
-
-    return text
-
-
-pdf_text = load_pdf(PDF_PATH)
-pdf_lines = [line.strip() for line in pdf_text.split("\n") if line.strip()]
-
-
-# =====================
-# LOAD FAQ
-# =====================
-def load_faq(path):
-
-    df = pd.read_csv(path, sep="\t", encoding="utf-8-sig")
-
-    df["question"] = df["question"].astype(str)
-    df["answer"] = df["answer"].astype(str)
-
-    return df
-
-
-# =====================
-# BUILD INDEX
-# =====================
-def build_index(df):
-
-    questions = df["question"].tolist()
-
-    vectorizer = TfidfVectorizer(
-        ngram_range=(1,2),
-        lowercase=True
-    )
-
-    faq_matrix = vectorizer.fit_transform(questions)
-
-    return vectorizer, faq_matrix
-
-
-# =====================
-# TÌM TRONG PDF
-# =====================
-def search_pdf(question):
-
-    words = question.lower().split()
-
-    best_line = None
-    best_score = 0
-
-    for line in pdf_lines:
-
-        score = 0
-
-        for w in words:
-            if w in line.lower():
-                score += 1
-
-        if score > best_score:
-            best_score = score
-            best_line = line
-
-    if best_score >= 2:
-        return best_line
-
-    return None
-
-
-# =====================
-# TOPK
-# =====================
-def topk_indices(sims, k):
-
+def topk_indices(sims: np.ndarray, k: int):
     k = min(k, sims.shape[0])
-
     idx = np.argpartition(sims, -k)[-k:]
     idx = idx[np.argsort(sims[idx])[::-1]]
-
     return idx
 
 
-# =====================
-# GET RESPONSE
-# =====================
+def load_faq(path: str) -> pd.DataFrame:
+    df = pd.read_csv(path, sep="\t", encoding="utf-8-sig")
+    required = {"question", "answer"}
+    missing = required - set(df.columns)
+    if missing:
+        raise SystemExit(f"FAQ thiếu cột: {sorted(missing)}. Cần tối thiểu: question, answer")
+    df["question"] = df["question"].astype(str)
+    df["answer"] = df["answer"].astype(str)
+    return df
+
+
+def build_index(df: pd.DataFrame):
+    questions = df["question"].to_list()
+    vectorizer = TfidfVectorizer(lowercase=True, ngram_range=(1, 2))
+    faq_matrix = vectorizer.fit_transform(questions)
+    return vectorizer, faq_matrix
+
+
+def guess_major(text: str):
+    t = text.lower()
+    majors = [
+        "công nghệ thông tin", "cntt",
+        "kỹ thuật phần mềm",
+        "quản trị kinh doanh", "qtkd",
+        "tài chính ngân hàng", "tài chính - ngân hàng",
+        "kế toán",
+        "ngôn ngữ anh",
+        "thú y",
+        "công nghệ thực phẩm",
+    ]
+    for m in majors:
+        if m in t:
+            return m
+    return None
+
+
 def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
     user_question = user_question.strip()
     if not user_question:
@@ -148,11 +91,33 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
     answer = str(df.iloc[best_idx]["answer"])
     return answer, suggestions
 
-Ngành: {ten_nganh}
-Mã ngành: {ma_nganh}
-Chỉ tiêu tuyển sinh: {chi_tieu}
-Tổ hợp xét tuyển: {to_hop}
-"""
+
+def main():
+    df = load_faq(FAQ_PATH)
+    vectorizer, faq_matrix = build_index(df)
+
+    print("=" * 65)
+    print("CTU FAQ Chatbot (TF-IDF + Cosine Similarity)")
+    print("Gõ 'thoat' để kết thúc")
+    print("=" * 65)
+
+    while True:
+        q = input("Bạn: ").strip()
+        if q.lower() in ("thoat", "exit", "quit"):
+            print("Chatbot: Tạm biệt!")
+            break
+        if not q:
+            continue
+
+        answer, suggestions = get_response(q, df, vectorizer, faq_matrix)
+        print("Chatbot:", answer)
+
+        if suggestions:
+            print("Gợi ý:")
+            for s in suggestions:
+                print("-", s)
+        print()
 
 
-            return answer, []
+if __name__ == "__main__":
+    main()
