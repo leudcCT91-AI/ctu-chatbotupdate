@@ -1,111 +1,185 @@
+from pypdf import PdfReader
 import pandas as pd
 import numpy as np
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
+PDF_PATH = "tuyensinh_ctu.pdf"
 FAQ_PATH = "faq.tsv"
-THRESHOLD = 0.55
+
+THRESHOLD = 0.35
 TOPK = 3
 SYNONYMS = {
     "ctu": "đại học cần thơ",
     "đhct": "đại học cần thơ",
     "đh cần thơ": "đại học cần thơ",
+
     "bao nhiêu tiền": "học phí",
-    "là bao nhiêu": "bao nhiêu",
+    "đóng tiền": "học phí",
+    "đóng học phí": "học phí",
+
+    "xin chậm đóng": "trễ hạn học phí",
+    "gia hạn học phí": "trễ hạn học phí",
+
     "lấy bao nhiêu điểm": "điểm chuẩn",
-    "điểm trúng tuyển": "điểm chuẩn",
+    "điểm trúng tuyển": "điểm chuẩn"
 }
 
-def topk_indices(sims: np.ndarray, k: int):
-    k = min(k, sims.shape[0])
-    idx = np.argpartition(sims, -k)[-k:]
-    idx = idx[np.argsort(sims[idx])[::-1]]
-    return idx
+# =====================
+# ĐỌC PDF
+# =====================
+def load_pdf(path):
+
+    reader = PdfReader(path)
+
+    text = ""
+
+    for page in reader.pages:
+        t = page.extract_text()
+
+        if t:
+            text += t + "\n"
+
+    return text
 
 
-def load_faq(path: str) -> pd.DataFrame:
+pdf_text = load_pdf(PDF_PATH)
+pdf_lines = [line.strip() for line in pdf_text.split("\n") if line.strip()]
+
+
+# =====================
+# LOAD FAQ
+# =====================
+def load_faq(path):
+
     df = pd.read_csv(path, sep="\t", encoding="utf-8-sig")
-    required = {"question", "answer"}
-    missing = required - set(df.columns)
-    if missing:
-        raise SystemExit(
-            f"FAQ thiếu cột: {sorted(missing)}. Cần tối thiểu: question, answer"
-        )
+
     df["question"] = df["question"].astype(str)
     df["answer"] = df["answer"].astype(str)
+
     return df
 
 
-def build_index(df: pd.DataFrame):
-    questions = df["question"].to_list()
+# =====================
+# BUILD INDEX
+# =====================
+def build_index(df):
+
+    questions = df["question"].tolist()
+
     vectorizer = TfidfVectorizer(
-    lowercase=True,
-    ngram_range=(1,2),
-    token_pattern=r"(?u)\b\w+\b"
-)
+        ngram_range=(1,2),
+        lowercase=True
+    )
+
     faq_matrix = vectorizer.fit_transform(questions)
+
     return vectorizer, faq_matrix
 
 
-def guess_major(text: str):
-    t = text.lower()
-    majors = [
-        "công nghệ thông tin", "cntt",
-        "kỹ thuật phần mềm",
-        "quản trị kinh doanh", "qtkd",
-        "tài chính ngân hàng", "tài chính - ngân hàng",
-        "kế toán",
-        "ngôn ngữ anh",
-        "thú y",
-        "công nghệ thực phẩm",
-    ]
-    for m in majors:
-        if m in t:
-            return m
+# =====================
+# TÌM TRONG PDF
+# =====================
+def search_pdf(question):
+
+    words = question.lower().split()
+
+    best_line = None
+    best_score = 0
+
+    for line in pdf_lines:
+
+        score = 0
+
+        for w in words:
+            if w in line.lower():
+                score += 1
+
+        if score > best_score:
+            best_score = score
+            best_line = line
+
+    if best_score >= 2:
+        return best_line
+
     return None
-def normalize_text(text: str):
+
+
+# =====================
+# TOPK
+# =====================
+def topk_indices(sims, k):
+
+    k = min(k, sims.shape[0])
+
+    idx = np.argpartition(sims, -k)[-k:]
+    idx = idx[np.argsort(sims[idx])[::-1]]
+
+    return idx
+
+
+# =====================
+# GET RESPONSE
+# =====================
+def normalize_text(text):
+
     t = text.lower()
+
     for k, v in SYNONYMS.items():
         t = t.replace(k, v)
-    t = t.replace("ngành", "")
-    return t
 
-def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
+    return t
+def get_response(user_question, df, vectorizer, faq_matrix):
+
     user_question = normalize_text(user_question.strip())
+
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    user_vec = vectorizer.transform([user_question])
-    sims = cosine_similarity(user_vec, faq_matrix).flatten()
+    # --------
+    # tìm PDF trước
+    # --------
+    pdf_answer = search_pdf(user_question)
 
-    best_idx = int(np.argmax(sims))
-    best_score = float(sims[best_idx])
+    if pdf_answer:
 
-    raw_top = topk_indices(sims, TOPK + 1)
-    top_idx = [i for i in raw_top if i != best_idx][:TOPK]
-    suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
+        parts = pdf_answer.split()
 
-    if best_score < THRESHOLD:
-        major = guess_major(user_question)
+        if len(parts) >= 6:
 
-        fallback = (
-            "Mình chưa chắc bạn đang hỏi ý nào. "
-            "Bạn chọn 1 trong 3 hướng dưới đây:"
-        )
+            ma_nganh = parts[1]
+            chi_tieu = parts[-2]
 
-        s3 = (
-            f"Môn đại cương của ngành {major} gồm những gì?"
-            if major
-            else "Môn đại cương của ngành [bạn ghi tên ngành] gồm những gì?"
-        )
+            ten_nganh = " ".join(parts[2:-2])
 
-        suggestions = [
-            "Học phí trường Đại học Cần Thơ bao nhiêu?",
-            "Điểm chuẩn CTU các năm gần đây",
-            s3,
-        ]
-        return fallback, suggestions
+        # tách tổ hợp
+            to_hop = parts[-1].split(",")
 
-    answer = str(df.iloc[best_idx]["answer"])
-    return answer, suggestions
+            to_hop_text = "\n".join([f"- {t}" for t in to_hop])
 
+            answer = f"""
+Ngành: {ten_nganh}
+Mã ngành: {ma_nganh}
+Chỉ tiêu tuyển sinh: {chi_tieu}
+
+Tổ hợp xét tuyển:
+{to_hop_text}
+"""
+
+       # return answer, []
+          #  ma_nganh = parts[1]
+          #  chi_tieu = parts[-2]
+          #  to_hop = parts[-1]
+
+           # ten_nganh = " ".join(parts[2:-2])
+
+           # answer = f"""
+#Ngành: {ten_nganh}
+#Mã ngành: {ma_nganh}
+#Chỉ tiêu tuyển sinh: {chi_tieu}
+#Tổ hợp xét tuyển: {to_hop}
+"""
+
+            return answer, []
