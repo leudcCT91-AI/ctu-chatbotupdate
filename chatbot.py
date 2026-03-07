@@ -82,6 +82,8 @@ def build_index(df):
 # =====================
 # TÌM TRONG PDF
 # =====================
+import re
+
 def search_pdf(question):
 
     words = question.lower().split()
@@ -90,6 +92,10 @@ def search_pdf(question):
     best_score = 0
 
     for line in pdf_lines:
+
+        
+        if not re.search(r"\b\d{7}\b", line):
+            continue
 
         score = 0
 
