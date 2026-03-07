@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -21,7 +20,9 @@ def load_faq(path: str) -> pd.DataFrame:
     required = {"question", "answer"}
     missing = required - set(df.columns)
     if missing:
-        raise SystemExit(f"FAQ thiếu cột: {sorted(missing)}. Cần tối thiểu: question, answer")
+        raise SystemExit(
+            f"FAQ thiếu cột: {sorted(missing)}. Cần tối thiểu: question, answer"
+        )
     df["question"] = df["question"].astype(str)
     df["answer"] = df["answer"].astype(str)
     return df
@@ -90,34 +91,3 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
 
     answer = str(df.iloc[best_idx]["answer"])
     return answer, suggestions
-
-
-def main():
-    df = load_faq(FAQ_PATH)
-    vectorizer, faq_matrix = build_index(df)
-
-    print("=" * 65)
-    print("CTU FAQ Chatbot (TF-IDF + Cosine Similarity)")
-    print("Gõ 'thoat' để kết thúc")
-    print("=" * 65)
-
-    while True:
-        q = input("Bạn: ").strip()
-        if q.lower() in ("thoat", "exit", "quit"):
-            print("Chatbot: Tạm biệt!")
-            break
-        if not q:
-            continue
-
-        answer, suggestions = get_response(q, df, vectorizer, faq_matrix)
-        print("Chatbot:", answer)
-
-        if suggestions:
-            print("Gợi ý:")
-            for s in suggestions:
-                print("-", s)
-        print()
-
-
-if __name__ == "__main__":
-    main()
