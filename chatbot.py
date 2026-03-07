@@ -153,27 +153,31 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
         if len(parts) >= 6:
 
-            ma_nganh = parts[0]
-            chi_tieu = parts[-5]
+        stt = parts[0]
+        ma_nganh = parts[1]
 
-            ten_nganh = " ".join(parts[1:-5])
+        chi_tieu = parts[-5]
 
-            # 4 tổ hợp xét tuyển
-            to_hop = parts[-4:]
+        ten_nganh = " ".join(parts[2:-5])
 
-            to_hop_text = "\n".join([f"- {t}" for t in to_hop])
+        # tổ hợp xét tuyển
+        to_hop = parts[-4:]
 
-            answer = f"""
+        to_hop_text = "\n".join([f"- {t}" for t in to_hop])
+
+        answer = f"""
 Ngành: {ten_nganh}
 Mã ngành: {ma_nganh}
+STT: {stt}
 Chỉ tiêu tuyển sinh: {chi_tieu}
 
 Tổ hợp xét tuyển:
 {to_hop_text}
 """
 
-            return answer, []
+        return answer, []
 
+            
 
     # ===== nếu PDF không có thì tìm FAQ =====
     user_vec = vectorizer.transform([user_question])
