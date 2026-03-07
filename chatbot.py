@@ -109,35 +109,50 @@ def topk_indices(sims, k):
 # =====================
 # GET RESPONSE
 # =====================
-def get_response(user_question, df, vectorizer, faq_matrix):
-
-    user_question = user_question.strip().lower()
-
+def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
+    user_question = user_question.strip()
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # --------
-    # tìm PDF trước
-    # --------
-    pdf_answer = search_pdf(user_question)
+    user_vec = vectorizer.transform([user_question])
+    sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
-    if pdf_answer:
+    best_idx = int(np.argmax(sims))
+    best_score = float(sims[best_idx])
 
-        parts = pdf_answer.split()
+    raw_top = topk_indices(sims, TOPK + 1)
+    top_idx = [i for i in raw_top if i != best_idx][:TOPK]
+    suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
 
-        if len(parts) >= 6:
+    if best_score < THRESHOLD:
+        major = guess_major(user_question)
 
-            ma_nganh = parts[1]
-            chi_tieu = parts[-2]
-            to_hop = parts[-1]
+        fallback = (
+            "Mình chưa chắc bạn đang hỏi ý nào. "
+            "Bạn chọn 1 trong 3 hướng dưới đây:"
+        )
 
-            ten_nganh = " ".join(parts[2:-2])
+        s3 = (
+            f"Môn đại cương của ngành {major} gồm những gì?"
+            if major
+            else "Môn đại cương của ngành [bạn ghi tên ngành] gồm những gì?"
+        )
 
-            answer = f"""
+        suggestions = [
+            "Học phí trường Đại học Cần Thơ bao nhiêu?",
+            "Điểm chuẩn CTU các năm gần đây",
+            s3,
+        ]
+        return fallback, suggestions
+
+    answer = str(df.iloc[best_idx]["answer"])
+    return answer, suggestions
+
 Ngành: {ten_nganh}
 Mã ngành: {ma_nganh}
 Chỉ tiêu tuyển sinh: {chi_tieu}
 Tổ hợp xét tuyển: {to_hop}
 """
+
 
             return answer, []
