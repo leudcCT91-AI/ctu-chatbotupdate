@@ -4,9 +4,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 FAQ_PATH = "faq.tsv"
-THRESHOLD = 0.30
+THRESHOLD = 0.55
 TOPK = 3
-
+SYNONYMS = {
+    "ctu": "đại học cần thơ",
+    "đhct": "đại học cần thơ",
+    "đh cần thơ": "đại học cần thơ",
+    "bao nhiêu tiền": "học phí",
+    "là bao nhiêu": "bao nhiêu",
+    "lấy bao nhiêu điểm": "điểm chuẩn",
+    "điểm trúng tuyển": "điểm chuẩn",
+}
 
 def topk_indices(sims: np.ndarray, k: int):
     k = min(k, sims.shape[0])
@@ -30,7 +38,11 @@ def load_faq(path: str) -> pd.DataFrame:
 
 def build_index(df: pd.DataFrame):
     questions = df["question"].to_list()
-    vectorizer = TfidfVectorizer(lowercase=True, ngram_range=(1, 2))
+    vectorizer = TfidfVectorizer(
+    lowercase=True,
+    ngram_range=(1,2),
+    token_pattern=r"(?u)\b\w+\b"
+)
     faq_matrix = vectorizer.fit_transform(questions)
     return vectorizer, faq_matrix
 
@@ -51,10 +63,15 @@ def guess_major(text: str):
         if m in t:
             return m
     return None
-
+def normalize_text(text: str):
+    t = text.lower()
+    for k, v in SYNONYMS.items():
+        t = t.replace(k, v)
+    t = t.replace("ngành", "")
+    return t
 
 def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
-    user_question = user_question.strip()
+    user_question = normalize_text(user_question.strip())
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
@@ -91,3 +108,4 @@ def get_response(user_question: str, df: pd.DataFrame, vectorizer, faq_matrix):
 
     answer = str(df.iloc[best_idx]["answer"])
     return answer, suggestions
+
