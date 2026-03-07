@@ -1,6 +1,7 @@
 from pypdf import PdfReader
 import pandas as pd
 import numpy as np
+import re
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -11,21 +12,7 @@ FAQ_PATH = "faq.tsv"
 
 THRESHOLD = 0.35
 TOPK = 3
-SYNONYMS = {
-    "ctu": "đại học cần thơ",
-    "đhct": "đại học cần thơ",
-    "đh cần thơ": "đại học cần thơ",
 
-    "bao nhiêu tiền": "học phí",
-    "đóng tiền": "học phí",
-    "đóng học phí": "học phí",
-
-    "xin chậm đóng": "trễ hạn học phí",
-    "gia hạn học phí": "trễ hạn học phí",
-
-    "lấy bao nhiêu điểm": "điểm chuẩn",
-    "điểm trúng tuyển": "điểm chuẩn"
-}
 
 # =====================
 # ĐỌC PDF
@@ -70,7 +57,7 @@ def build_index(df):
     questions = df["question"].tolist()
 
     vectorizer = TfidfVectorizer(
-        ngram_range=(1,2),
+        ngram_range=(1, 2),
         lowercase=True
     )
 
@@ -80,35 +67,31 @@ def build_index(df):
 
 
 # =====================
-# TÌM TRONG PDF
+# TÌM NGÀNH TRONG PDF
 # =====================
-import re
-
 def search_pdf(question):
 
-    words = question.lower().split()
-
-    best_line = None
-    best_score = 0
+    q = question.lower()
 
     for line in pdf_lines:
 
-        
+        # chỉ lấy dòng có mã ngành
         if not re.search(r"\b\d{7}\b", line):
             continue
 
-        score = 0
+        if "sư phạm" in q and "sư phạm" in line.lower():
 
-        for w in words:
-            if w in line.lower():
-                score += 1
+            # kiểm tra thêm từ khóa ngành
+            words = q.split()
 
-        if score > best_score:
-            best_score = score
-            best_line = line
+            match_count = 0
 
-    if best_score >= 2:
-        return best_line
+            for w in words:
+                if len(w) > 3 and w in line.lower():
+                    match_count += 1
+
+            if match_count >= 2:
+                return line
 
     return None
 
@@ -127,67 +110,56 @@ def topk_indices(sims, k):
 
 
 # =====================
+# FORMAT PDF RESULT
+# =====================
+def format_pdf_answer(line):
+
+    parts = line.split()
+
+    stt = parts[0]
+    ma_nganh = parts[1]
+
+    chi_tieu = parts[-5]
+
+    to_hop = parts[-4:]
+
+    ten_nganh = " ".join(parts[2:-5])
+
+    to_hop_text = "\n".join([f"• {t}" for t in to_hop])
+
+    answer = f"""
+Ngành: {ten_nganh}
+Mã ngành: {ma_nganh}
+STT: {stt}
+Chỉ tiêu tuyển sinh: {chi_tieu}
+
+Tổ hợp xét tuyển:
+{to_hop_text}
+"""
+
+    return answer
+
+
+# =====================
 # GET RESPONSE
 # =====================
-def normalize_text(text):
-
-    t = text.lower()
-
-    for k, v in SYNONYMS.items():
-        t = t.replace(k, v)
-
-    return t
-import re
-
-def search_pdf(question):
-
-    q = question.lower()
-
-    best_line = None
-    best_score = 0
-
-    for line in pdf_lines:
-
-        line_lower = line.lower()
-
-        # chỉ lấy dòng có mã ngành (7 chữ số)
-        if not re.search(r"\b\d{7}\b", line_lower):
-            continue
-
-        score = 0
-
-        # ưu tiên match tên ngành
-        words = q.split()
-
-        for w in words:
-
-            if len(w) > 3 and w in line_lower:
-                score += 2
-            elif w in line_lower:
-                score += 1
-
-        if score > best_score:
-            best_score = score
-            best_line = line
-
-    if best_score >= 4:
-        return best_line
-
-    return None
 def get_response(user_question, df, vectorizer, faq_matrix):
 
-    user_question = normalize_text(user_question.strip())
+    user_question = user_question.strip().lower()
 
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # 🔴 BƯỚC 1: tìm trong PDF trước
-    pdf_answer = search_pdf(user_question)
+    # 🔴 ƯU TIÊN TÌM PDF
+    pdf_line = search_pdf(user_question)
 
-    if pdf_answer:
-        return pdf_answer, []
+    if pdf_line:
 
-    # 🔵 BƯỚC 2: nếu PDF không có thì mới dùng FAQ
+        answer = format_pdf_answer(pdf_line)
+
+        return answer, []
+
+    # 🔵 KHÔNG CÓ TRONG PDF → TÌM FAQ
     user_vec = vectorizer.transform([user_question])
     sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
@@ -198,25 +170,6 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     top_idx = [i for i in raw_top if i != best_idx][:TOPK]
 
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
-
-    if best_score < THRESHOLD:
-        return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
-
-    answer = str(df.iloc[best_idx]["answer"])
-
-    return answer, suggestions
-
-            
-
-    # ===== nếu PDF không có thì tìm FAQ =====
-    user_vec = vectorizer.transform([user_question])
-    sims = cosine_similarity(user_vec, faq_matrix).flatten()
-
-    best_idx = int(np.argmax(sims))
-    best_score = float(sims[best_idx])
-
-    idx = topk_indices(sims, TOPK)
-    suggestions = [str(df.iloc[i]["question"]) for i in idx]
 
     if best_score < THRESHOLD:
         return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
