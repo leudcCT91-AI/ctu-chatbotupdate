@@ -203,7 +203,7 @@ def get_response(user_question, df, vectorizer, faq_matrix):
             to_hop_text = "\n".join([f"- {t}" for t in to_hop])
 
             answer = f"""
-answer = f"""
+
 **Ngành:** {ten_nganh}
 **Mã ngành:** {ma_nganh}
 **STT:** {stt}
