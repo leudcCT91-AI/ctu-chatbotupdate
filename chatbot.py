@@ -181,39 +181,30 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # ===== tìm trong PDF trước =====
+    # 🔴 BƯỚC 1: tìm trong PDF trước
     pdf_answer = search_pdf(user_question)
 
     if pdf_answer:
+        return pdf_answer, []
 
-        parts = pdf_answer.split()
+    # 🔵 BƯỚC 2: nếu PDF không có thì mới dùng FAQ
+    user_vec = vectorizer.transform([user_question])
+    sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
-        if len(parts) >= 6:
+    best_idx = int(np.argmax(sims))
+    best_score = float(sims[best_idx])
 
-            stt = parts[0]
-            ma_nganh = parts[1]
+    raw_top = topk_indices(sims, TOPK + 1)
+    top_idx = [i for i in raw_top if i != best_idx][:TOPK]
 
-            chi_tieu = parts[-5]
+    suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
 
-            ten_nganh = " ".join(parts[2:-5])
+    if best_score < THRESHOLD:
+        return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
 
-            # tổ hợp xét tuyển
-            to_hop = parts[-4:]
+    answer = str(df.iloc[best_idx]["answer"])
 
-            to_hop_text = "\n".join([f"- {t}" for t in to_hop])
-
-            answer = f"""
-
-**Ngành:** {ten_nganh}
-**Mã ngành:** {ma_nganh}
-**STT:** {stt}
-**Chỉ tiêu tuyển sinh:** {chi_tieu}
-
-**Tổ hợp xét tuyển:**
-{to_hop_text}
-"""
-
-        return answer, []
+    return answer, suggestions
 
             
 
