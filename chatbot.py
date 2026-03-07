@@ -137,6 +137,43 @@ def normalize_text(text):
         t = t.replace(k, v)
 
     return t
+import re
+
+def search_pdf(question):
+
+    q = question.lower()
+
+    best_line = None
+    best_score = 0
+
+    for line in pdf_lines:
+
+        line_lower = line.lower()
+
+        # chỉ lấy dòng có mã ngành (7 chữ số)
+        if not re.search(r"\b\d{7}\b", line_lower):
+            continue
+
+        score = 0
+
+        # ưu tiên match tên ngành
+        words = q.split()
+
+        for w in words:
+
+            if len(w) > 3 and w in line_lower:
+                score += 2
+            elif w in line_lower:
+                score += 1
+
+        if score > best_score:
+            best_score = score
+            best_line = line
+
+    if best_score >= 4:
+        return best_line
+
+    return None
 def get_response(user_question, df, vectorizer, faq_matrix):
 
     user_question = normalize_text(user_question.strip())
@@ -166,12 +203,13 @@ def get_response(user_question, df, vectorizer, faq_matrix):
             to_hop_text = "\n".join([f"- {t}" for t in to_hop])
 
             answer = f"""
-Ngành: {ten_nganh}
-Mã ngành: {ma_nganh}
-STT: {stt}
-Chỉ tiêu tuyển sinh: {chi_tieu}
+answer = f"""
+**Ngành:** {ten_nganh}
+**Mã ngành:** {ma_nganh}
+**STT:** {stt}
+**Chỉ tiêu tuyển sinh:** {chi_tieu}
 
-Tổ hợp xét tuyển:
+**Tổ hợp xét tuyển:**
 {to_hop_text}
 """
 
