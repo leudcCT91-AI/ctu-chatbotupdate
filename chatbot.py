@@ -6,8 +6,8 @@ import unicodedata
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-PDF_PATH = "tuyensinh_ctu-3.pdf"
-FAQ_PATH = "faq-2.tsv"
+PDF_PATH = "tuyensinh_ctu.pdf"
+FAQ_PATH = "faq.tsv"
 
 THRESHOLD = 0.35
 TOPK = 3
@@ -168,3 +168,4 @@ def get_response(user_question, faq_df, faq_vectorizer, faq_matrix, major_df, ma
         return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
 
     return str(faq_df.iloc[best_idx]["answer"]), suggestions
+
