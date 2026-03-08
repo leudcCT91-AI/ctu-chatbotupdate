@@ -5,7 +5,7 @@ st.set_page_config(page_title="CTU Chatbot")
 st.title("🎓 CTU Chatbot")
 
 df = load_faq("faq.tsv")
-vectorizer, faq_matrix = build_index(df)
+vectorizer, faq_matrix = build_faq_index(df)
 
 question = st.text_input("Nhập câu hỏi")
 
@@ -17,3 +17,4 @@ if question:
         st.subheader("Gợi ý")
         for s in suggestions:
             st.write("- " + s)
+
