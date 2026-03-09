@@ -7,7 +7,7 @@ st.title("🎓 CTU Chatbot")
 df = load_faq("faq.tsv")
 vectorizer, faq_matrix = build_index(df)
 
-question = st.text_input("Nhập câu hỏi")
+question = st.text_input("Bạn cần hỗ trợ vấn đề gì?")
 
 if question:
     answer, suggestions = get_response(question, df, vectorizer, faq_matrix)
