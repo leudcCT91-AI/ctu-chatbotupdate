@@ -185,7 +185,6 @@ def topk_indices(sims, k):
 # =====================
 def format_pdf_answer(line):
     parts = line.split()
-
     ma_nganh = parts[1]
     chi_tieu = parts[-5]
     to_hop = parts[-4:]
@@ -193,10 +192,10 @@ def format_pdf_answer(line):
 
     to_hop_text = "\n".join([f"• {t}" for t in to_hop])
 
-    answer = f"""**Ngành:** {ten_nganh}
-**Mã ngành:** {ma_nganh}
-**Chỉ tiêu tuyển sinh:** {chi_tieu}
-**Tổ hợp xét tuyển:**
+    answer = f"""**Ngành:** {ten_nganh}\n
+**Mã ngành:** {ma_nganh}\n
+**Chỉ tiêu tuyển sinh:** {chi_tieu}\n
+**Tổ hợp xét tuyển:**\n
 {to_hop_text}"""
 
     return answer
@@ -256,3 +255,4 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
     answer = str(df.iloc[best_idx]["answer"])
     return answer, suggestions
+
