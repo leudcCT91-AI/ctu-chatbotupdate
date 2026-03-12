@@ -186,7 +186,6 @@ def topk_indices(sims, k):
 def format_pdf_answer(line):
     parts = line.split()
 
-    stt = parts[0]
     ma_nganh = parts[1]
     chi_tieu = parts[-5]
     to_hop = parts[-4:]
@@ -196,9 +195,7 @@ def format_pdf_answer(line):
 
     answer = f"""**Ngành:** {ten_nganh}
 **Mã ngành:** {ma_nganh}
-**STT:** {stt}
 **Chỉ tiêu tuyển sinh:** {chi_tieu}
-
 **Tổ hợp xét tuyển:**
 {to_hop_text}"""
 
