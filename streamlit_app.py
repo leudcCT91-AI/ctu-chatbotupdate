@@ -1,8 +1,8 @@
 import streamlit as st
 from chatbot import load_faq, build_index, get_response
 
-st.set_page_config(page_title="CTU Chatbot")
-st.title("🎓 CTU Chatbot")
+st.set_page_config(page_title="CTU Chatbot Assistant")
+st.title("🎓 CTU Chatbot Assistant")
 
 df = load_faq("faq.tsv")
 vectorizer, faq_matrix = build_index(df)
@@ -16,4 +16,5 @@ if question:
     if suggestions:
         st.subheader("Gợi ý")
         for s in suggestions:
+
             st.write("- " + s)
