@@ -200,24 +200,58 @@ def format_pdf_answer(line):
 
     return answer
 
+def infer_group(question):
+    q = normalize_no_accent(question)
 
+    if any(k in q for k in [
+        "quy che", "hoc vu", "canh bao hoc vu",
+        "buoc thoi hoc", "bao luu", "tam dung", "chuyen nganh"
+    ]):
+        return "quyche"
+
+    if any(k in q for k in [
+        "hoc bong", "khuyen khich hoc tap", "tro cap"
+    ]):
+        return "hocbong"
+
+    if any(k in q for k in [
+        "hoc phi", "dong hoc phi", "cong no"
+    ]):
+        return "hocphi"
+
+    if any(k in q for k in [
+        "dang ky hoc phan", "hoc phan", "tin chi", "hoc lai"
+    ]):
+        return "hocphan"
+
+    if any(k in q for k in [
+        "phuc khao", "khieu nai diem", "xem diem"
+    ]):
+        return "sinhvien"
+
+    return None
 # =====================
 # RERANK FAQ
 # =====================
 def rerank_scores(user_question, df, sims):
     scores = []
+    target_group = infer_group(user_question)
 
     for i, base_sim in enumerate(sims):
-        faq_q = df.iloc[i]["question"]
+        faq_q = str(df.iloc[i]["question"])
+        faq_group = str(df.iloc[i]["group"]).strip().lower()
 
         fuzzy = fuzzy_ratio(user_question, faq_q)
         overlap = overlap_score(user_question, faq_q)
 
-        final_score = 0.55 * float(base_sim) + 0.30 * fuzzy + 0.15 * overlap
+        group_bonus = 0.0
+        if target_group and faq_group == target_group:
+            group_bonus = 0.12
+
+        final_score = 0.50 * float(base_sim) + 0.28 * fuzzy + 0.10 * overlap + group_bonus
         scores.append(final_score)
 
     return np.array(scores)
-
 
 # =====================
 # GET RESPONSE
@@ -243,6 +277,9 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
     best_idx = int(np.argmax(final_scores))
     best_score = float(final_scores[best_idx])
+    sorted_scores = np.sort(final_scores)[::-1]
+    second_score = float(sorted_scores[1]) if len(sorted_scores) > 1 else 0.0
+
 
     raw_top = topk_indices(final_scores, TOPK + 1)
     top_idx = [i for i in raw_top if i != best_idx][:TOPK]
@@ -251,8 +288,12 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     best_fuzzy = fuzzy_ratio(user_question, df.iloc[best_idx]["question"])
 
     if best_score >= THRESHOLD or best_fuzzy >= FUZZY_THRESHOLD:
+        if best_score < 0.38 or (best_score - second_score) < 0.06:
+            return "Mình chưa chắc bạn đang hỏi ý nào, bạn nói rõ hơn giúp mình nhé.", suggestions
+
         answer = str(df.iloc[best_idx]["answer"])
         return answer, suggestions
+
 
     # ===== FAQ không chắc mới fallback PDF =====
     if should_search_pdf(user_question):
@@ -262,7 +303,5 @@ def get_response(user_question, df, vectorizer, faq_matrix):
             return answer, []
 
     return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
-
-
 
 
