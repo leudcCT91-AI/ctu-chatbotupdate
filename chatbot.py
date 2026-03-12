@@ -222,19 +222,20 @@ def rerank_scores(user_question, df, sims):
 # =====================
 # GET RESPONSE
 # =====================
+def should_search_pdf(question):
+    q = normalize_no_accent(question)
+    pdf_keywords = [
+        "nganh", "ma nganh", "chi tieu",
+        "to hop", "xet tuyen", "diem chuan", "tuyen sinh"
+    ]
+    return any(k in q for k in pdf_keywords)
 def get_response(user_question, df, vectorizer, faq_matrix):
     user_question = normalize_text(user_question)
 
     if not user_question:
         return "Bạn nhập câu hỏi giúp mình nhé.", []
 
-    # ===== TÌM TRONG PDF TRƯỚC =====
-    pdf_line = search_pdf(user_question)
-    if pdf_line:
-        answer = format_pdf_answer(pdf_line)
-        return answer, []
-
-    # ===== TÌM FAQ =====
+    # ===== TÌM FAQ TRƯỚC =====
     user_vec = vectorizer.transform([normalize_for_vector(user_question)])
     sims = cosine_similarity(user_vec, faq_matrix).flatten()
 
@@ -245,14 +246,22 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
     raw_top = topk_indices(final_scores, TOPK + 1)
     top_idx = [i for i in raw_top if i != best_idx][:TOPK]
-
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
 
     best_fuzzy = fuzzy_ratio(user_question, df.iloc[best_idx]["question"])
 
-    if best_score < THRESHOLD and best_fuzzy < FUZZY_THRESHOLD:
-        return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
+    if best_score >= THRESHOLD or best_fuzzy >= FUZZY_THRESHOLD:
+        answer = str(df.iloc[best_idx]["answer"])
+        return answer, suggestions
 
-    answer = str(df.iloc[best_idx]["answer"])
-    return answer, suggestions
+    # ===== FAQ không chắc mới fallback PDF =====
+    if should_search_pdf(user_question):
+        pdf_line = search_pdf(user_question)
+        if pdf_line:
+            answer = format_pdf_answer(pdf_line)
+            return answer, []
+
+    return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
+
+
 
