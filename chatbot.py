@@ -287,27 +287,36 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     sorted_scores = np.sort(final_scores)[::-1]
     second_score = float(sorted_scores[1]) if len(sorted_scores) > 1 else 0.0
 
-
-    raw_top = topk_indices(final_scores, TOPK + 8)
+    raw_top = topk_indices(final_scores, TOPK + 12)
     target_group = infer_group(user_question)
-
+    
     candidates = []
     for i in raw_top:
         if i == best_idx:
             continue
-
+    
         score = float(final_scores[i])
         faq_group = str(df.iloc[i]["group"]).strip().lower()
-
+    
         if target_group and faq_group == target_group:
             score += 0.12
-
-    candidates.append((i, score))
-
+    
+        candidates.append((i, score))
+    
     candidates.sort(key=lambda x: x[1], reverse=True)
-    top_idx = [i for i, _ in candidates[:TOPK]]
+    
+    seen_questions = set()
+    top_idx = []
+    for i, _ in candidates:
+        q = str(df.iloc[i]["question"]).strip()
+        if q in seen_questions:
+            continue
+        seen_questions.add(q)
+        top_idx.append(i)
+        if len(top_idx) >= TOPK:
+            break
+    
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
-
 
     best_fuzzy = fuzzy_ratio(user_question, df.iloc[best_idx]["question"])
 
@@ -328,3 +337,4 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
 
     return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
+
