@@ -337,4 +337,3 @@ def get_response(user_question, df, vectorizer, faq_matrix):
 
 
     return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
-
