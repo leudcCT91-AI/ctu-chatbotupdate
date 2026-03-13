@@ -13,7 +13,7 @@ FAQ_PATH = "faq.tsv"
 
 THRESHOLD = 0.22
 FUZZY_THRESHOLD = 0.62
-TOPK = 3
+TOPK = 5
 
 
 def remove_accents(text):
@@ -228,6 +228,13 @@ def infer_group(question):
         "phuc khao", "khieu nai diem", "xem diem"
     ]):
         return "sinhvien"
+    if any(k in q for k in [
+        "ren luyen", "diem ren luyen", "quy che ren luyen",
+        "danh gia ren luyen", "hoat dong ren luyen",
+        "minh chung ren luyen", "cong diem ren luyen",
+        "khieu nai diem ren luyen", "xep loai ren luyen"
+    ]):
+        return "ren_luyen"
 
     return None
 # =====================
@@ -281,9 +288,26 @@ def get_response(user_question, df, vectorizer, faq_matrix):
     second_score = float(sorted_scores[1]) if len(sorted_scores) > 1 else 0.0
 
 
-    raw_top = topk_indices(final_scores, TOPK + 1)
-    top_idx = [i for i in raw_top if i != best_idx][:TOPK]
+    raw_top = topk_indices(final_scores, TOPK + 8)
+    target_group = infer_group(user_question)
+
+    candidates = []
+    for i in raw_top:
+        if i == best_idx:
+            continue
+
+        score = float(final_scores[i])
+        faq_group = str(df.iloc[i]["group"]).strip().lower()
+
+        if target_group and faq_group == target_group:
+            score += 0.12
+
+    candidates.append((i, score))
+
+    candidates.sort(key=lambda x: x[1], reverse=True)
+    top_idx = [i for i, _ in candidates[:TOPK]]
     suggestions = [str(df.iloc[i]["question"]) for i in top_idx]
+
 
     best_fuzzy = fuzzy_ratio(user_question, df.iloc[best_idx]["question"])
 
@@ -301,5 +325,6 @@ def get_response(user_question, df, vectorizer, faq_matrix):
         if pdf_line:
             answer = format_pdf_answer(pdf_line)
             return answer, []
+
 
     return "Mình chưa chắc bạn đang hỏi ý nào.", suggestions
