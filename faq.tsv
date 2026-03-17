@@ -1515,5 +1515,379 @@ id	group	question	answer
 1584	sinh_vien	Sinh viên năm nhất có nên tham gia hoạt động chỉ để cộng điểm rèn luyện không?	Điểm rèn luyện là một lợi ích, nhưng bạn vẫn nên chọn hoạt động phù hợp với bản thân để duy trì tích cực và thực chất hơn. Chọn chỉ vì điểm đôi khi dễ khiến bạn nhanh chán hoặc quá tải.
 1585	sinh_vien	Nếu em bỏ ngang câu lạc bộ giữa chừng có bị đánh giá không?	Tùy cách bạn rời đi và trách nhiệm đang đảm nhận, điều này có thể không vấn đề nếu bạn trao đổi lịch sự và bàn giao rõ ràng. Quan trọng là giữ thái độ chuyên nghiệp và tôn trọng tập thể.
 1586	sinh_vien	Làm sao biết câu lạc bộ nào hoạt động nghiêm túc?	Bạn có thể xem fanpage chính thức, tần suất hoạt động, cách tổ chức sự kiện, phản hồi từ thành viên cũ và mức độ rõ ràng trong tuyển thành viên. Những dấu hiệu đó thường phản ánh khá rõ chất lượng hoạt động.
+1587	sinh_vien	Em mới vào đại học mà chưa quen cách sống chung với người lạ thì phải làm sao?	Điều này rất bình thường với sinh viên năm nhất. Bạn nên bắt đầu bằng việc trao đổi những nguyên tắc cơ bản như giờ ngủ, vệ sinh, dùng đồ chung và tôn trọng không gian riêng để dễ sống cùng nhau hơn.
+1588	sinh_vien	Nếu em với bạn cùng phòng khác giờ sinh hoạt quá thì xử lý sao?	Bạn nên nói chuyện sớm để thống nhất những mốc quan trọng như giờ tắt đèn, giờ nghỉ ngơi và lúc học bài. Khi sống chung, điều quan trọng là tìm điểm cân bằng chứ không nên để khó chịu kéo dài.
+1589	sinh_vien	Bạn cùng phòng ngủ muộn còn em ngủ sớm thì làm sao cho đỡ ảnh hưởng?	Bạn có thể trao đổi để thống nhất cách sinh hoạt như dùng đèn nhỏ, đeo tai nghe, hạn chế tiếng ồn hoặc chuyển các hoạt động sang khu vực chung. Nói rõ nhu cầu của mình một cách lịch sự sẽ dễ được tôn trọng hơn.
+1590	sinh_vien	Nếu em không hợp tính bạn cùng phòng thì có nên cố ở tiếp không?	Bạn nên thử trao đổi và điều chỉnh cách sống chung trước, vì nhiều mâu thuẫn đến từ việc chưa nói rõ với nhau. Nếu đã cố gắng mà vẫn không ổn, bạn có thể hỏi ban quản lý về khả năng hỗ trợ đổi phòng.
+1591	sinh_vien	Bạn cùng phòng hay dẫn bạn bè về phòng làm em khó chịu thì em nên làm gì?	Bạn nên trao đổi thẳng nhưng nhẹ nhàng về cảm giác của mình và thống nhất lại quy tắc tiếp khách trong phòng. Nếu vấn đề lặp lại nhiều lần, bạn có thể nhờ ban quản lý hỗ trợ.
+1592	sinh_vien	Nếu bạn cùng phòng hay mượn đồ mà không hỏi trước thì em xử lý sao?	Bạn nên nói rõ đâu là đồ cá nhân và đâu là đồ có thể dùng chung để tránh hiểu lầm. Sống chung càng rõ ràng từ đầu thì càng ít phát sinh mâu thuẫn.
+1593	sinh_vien	Có nên chia khu vực để đồ riêng cho từng người trong phòng không?	Rất nên, vì việc phân chia không gian rõ ràng giúp phòng gọn hơn và tránh xáo trộn đồ đạc. Bạn có thể thống nhất ngay khi mới nhận phòng hoặc khi bắt đầu thấy bất tiện.
+1594	sinh_vien	Nếu em thấy mình khó hòa nhập với phòng ở thì nên bắt đầu từ đâu?	Bạn không cần cố gắng quá nhanh, chỉ cần bắt đầu từ những việc nhỏ như chào hỏi, hỗ trợ việc chung và trò chuyện ngắn hằng ngày. Cảm giác quen dần sẽ đến theo thời gian.
+1595	sinh_vien	Sinh viên năm nhất có dễ bị sốc vì môi trường sống tập thể không?	Có thể có cảm giác bỡ ngỡ lúc đầu vì phải chia sẻ không gian, lịch sinh hoạt và thói quen với người khác. Nhưng đây là trải nghiệm khá phổ biến và đa số sinh viên sẽ thích nghi dần nếu biết giao tiếp và điều chỉnh.
+1596	sinh_vien	Em nên làm gì trong tuần đầu tiên khi mới vào ký túc xá?	Bạn nên ưu tiên ổn định chỗ ngủ, sắp xếp đồ đạc, làm quen bạn cùng phòng, nắm nội quy cơ bản và lưu các đầu mối hỗ trợ cần thiết. Tuần đầu càng gọn gàng và chủ động thì về sau càng đỡ rối.
+1597	sinh_vien	Có nên mang hết đồ đạc từ nhà lên ngay khi mới ở ký túc xá không?	Không nhất thiết, bạn nên mang những đồ thật cần trước rồi bổ sung dần theo nhu cầu thực tế. Cách này giúp tránh phòng chật và đỡ mất công sắp xếp lại nhiều lần.
+1598	sinh_vien	Nếu phòng ký túc xá chật quá thì em nên sắp xếp đồ thế nào?	Bạn nên ưu tiên những món dùng thường xuyên, cất gọn đồ ít dùng và thống nhất với bạn cùng phòng về khu vực chung - riêng. Phòng ở tập thể sẽ dễ chịu hơn nhiều nếu mọi người cùng giữ gọn gàng.
+1599	sinh_vien	Ở ký túc xá có nên dùng ổ cắm điện riêng nhiều thiết bị không?	Bạn nên dùng thiết bị điện đúng quy định và tránh cắm quá nhiều đồ cùng lúc nếu không cần thiết. Với khu ở tập thể, an toàn điện luôn là việc cần ưu tiên hàng đầu.
+1600	sinh_vien	Nếu em thấy ổ điện, quạt hay thiết bị trong phòng có dấu hiệu hỏng thì làm sao?	Bạn nên báo sớm cho ban quản lý hoặc bộ phận phụ trách để được kiểm tra và xử lý. Không nên tự sửa nếu không chắc về an toàn.
+1601	sinh_vien	Có nên tự mua thêm đồ điện công suất lớn đem vào ký túc xá không?	Bạn chỉ nên mang những thiết bị được phép và thật sự cần thiết. Trước khi dùng, nên hỏi kỹ nội quy để tránh vi phạm hoặc gây mất an toàn.
+1602	sinh_vien	Nếu em nghi có nguy cơ cháy nổ trong phòng thì phải làm sao?	Bạn nên ngắt thiết bị nếu an toàn để làm vậy và báo ngay cho ban quản lý, bảo vệ hoặc người trực ký túc xá. Trong tình huống khẩn cấp, ưu tiên an toàn của người trong phòng trước.
+1603	sinh_vien	Sinh viên mới ở ký túc xá có cần học nội quy phòng cháy chữa cháy không?	Có, đây là nội dung rất quan trọng vì liên quan trực tiếp đến an toàn của bạn và mọi người xung quanh. Bạn nên nắm rõ lối thoát, số liên hệ khẩn cấp và các vật dụng bị hạn chế trong phòng.
+1604	sinh_vien	Nếu có báo cháy hoặc sự cố khẩn cấp thì sinh viên nên làm gì trước?	Bạn nên bình tĩnh, làm theo hướng dẫn thoát hiểm và di chuyển đến nơi an toàn theo nội quy của khu ở. Sau đó mới liên hệ người phụ trách hoặc hỗ trợ những việc cần thiết nếu có thể.
+1605	sinh_vien	Em có nên lưu số điện thoại ban quản lý và bảo vệ ký túc xá không?	Rất nên, vì khi xảy ra sự cố bạn sẽ cần liên hệ nhanh thay vì đi tìm thông tin lúc đang rối. Đây là một việc nhỏ nhưng rất hữu ích cho sinh viên mới.
+1606	sinh_vien	Nếu em làm mất chìa khóa nhiều lần thì có sao không?	Điều này vừa bất tiện vừa có thể ảnh hưởng đến an toàn của phòng ở. Bạn nên tập thói quen kiểm tra chìa khóa trước khi ra ngoài và báo sớm nếu bị mất để được hỗ trợ đúng cách.
+1607	sinh_vien	Có nên làm thêm móc khóa hoặc đánh dấu chìa khóa phòng không?	Có thể, miễn là bạn vẫn bảo đảm không để lộ thông tin nhạy cảm như số phòng quá rõ ràng nếu bị rơi mất. Mục tiêu là dễ nhớ, dễ giữ nhưng vẫn an toàn.
+1608	sinh_vien	Nếu em bị khóa ngoài phòng vào buổi tối thì nên liên hệ ai?	Bạn nên liên hệ bảo vệ, ban quản lý hoặc đầu mối trực của khu ở theo thông tin được niêm yết. Không nên tự tìm cách mở cửa nếu có thể làm hỏng khóa hoặc gây nguy hiểm.
+1609	sinh_vien	Ở ký túc xá có nên để tiền mặt và giấy tờ quan trọng trong phòng không?	Bạn nên hạn chế để quá nhiều tiền mặt và cần cất giấy tờ quan trọng ở nơi an toàn, có khóa nếu có thể. Trong môi trường ở chung, tự bảo quản tài sản là rất quan trọng.
+1610	sinh_vien	Nếu em sợ mất đồ khi ở tập thể thì nên làm gì?	Bạn nên khóa cửa cẩn thận, cất riêng đồ có giá trị, tránh để đồ lung tung và tạo thói quen kiểm tra tài sản thường xuyên. Đồng thời nên trao đổi rõ với bạn cùng phòng về việc giữ gìn không gian chung.
+1611	sinh_vien	Có nên mang laptop, máy tính bảng hoặc đồ có giá trị lên ký túc xá không?	Có thể mang nếu bạn thực sự cần cho việc học, nhưng phải tự bảo quản cẩn thận. Bạn nên tránh để đồ giá trị ở nơi dễ thấy hoặc dễ bị cầm nhầm.
+1612	sinh_vien	Nếu em nhặt được đồ trong phòng sinh hoạt chung hoặc hành lang thì nên làm gì?	Bạn nên giao cho ban quản lý, bảo vệ hoặc nơi tiếp nhận đồ thất lạc nếu có. Không nên tự giữ quá lâu vì dễ gây hiểu lầm hoặc khó tìm lại chủ.
+1613	sinh_vien	Có nên lập nhóm chat riêng của phòng ở không?	Rất nên, vì nhóm chat giúp nhắc nhau giờ giấc, lịch dọn dẹp, thông báo sự cố và trao đổi việc chung nhanh hơn. Đây là cách đơn giản nhưng khá hiệu quả khi sống tập thể.
+1614	sinh_vien	Nếu nhóm chat phòng ở hay cãi nhau thì nên xử lý thế nào?	Bạn nên tránh tranh cãi căng thẳng trên tin nhắn và ưu tiên nói chuyện trực tiếp khi có vấn đề. Giao tiếp thẳng nhưng bình tĩnh thường dễ giải quyết hơn hiểu lầm qua chữ.
+1615	sinh_vien	Có nên phân công lịch dọn phòng ngay từ đầu không?	Có, việc này giúp mọi người rõ trách nhiệm và tránh tình trạng một người làm nhiều, một người làm ít. Khi đã thống nhất từ sớm thì việc sống chung sẽ nhẹ nhàng hơn.
+1616	sinh_vien	Nếu trong phòng có người không chịu làm việc chung thì sao?	Bạn nên trao đổi trực tiếp trước để thống nhất lại nguyên tắc sinh hoạt. Nếu người đó vẫn không hợp tác và ảnh hưởng cả phòng, có thể nhờ người phụ trách hỗ trợ.
+1617	sinh_vien	Em có nên cố tham gia thật nhiều hoạt động ngay năm nhất không?	Không nhất thiết, bạn nên ưu tiên làm quen việc học và môi trường trước rồi mới tăng dần hoạt động. Tham gia vừa sức sẽ giúp bạn bền hơn và ít bị quá tải.
+1618	sinh_vien	Sinh viên năm nhất nên ưu tiên học hay tham gia hoạt động trước?	Bạn nên ưu tiên ổn định việc học và nề nếp sinh hoạt trước, sau đó chọn thêm một vài hoạt động phù hợp. Không cần phải làm mọi thứ cùng lúc trong giai đoạn đầu.
+1619	sinh_vien	Em muốn mở rộng quan hệ nhưng sợ hoạt động phong trào quá đông thì nên làm gì?	Bạn có thể bắt đầu từ những nhóm nhỏ như câu lạc bộ học thuật, nhóm kỹ năng, nhóm đọc sách hoặc tình nguyện quy mô vừa. Những môi trường này thường dễ tiếp cận hơn với người mới.
+1620	sinh_vien	Nếu em là người hướng nội thì nên chọn hoạt động nào ở trường?	Bạn có thể thử các câu lạc bộ học thuật, nhóm kỹ năng, truyền thông hậu trường, thư viện sự kiện hoặc hoạt động tình nguyện quy mô nhỏ. Điều quan trọng là chọn môi trường khiến bạn thấy thoải mái chứ không phải cố giống người khác.
+1621	sinh_vien	Em muốn tham gia hoạt động để làm đẹp CV thì có nên không?	Có thể, nhưng bạn nên chọn hoạt động mình thực sự theo được và học được điều gì đó từ đó. Nếu chỉ tham gia cho có tên mà không gắn bó, hiệu quả thường không cao.
+1622	sinh_vien	Câu lạc bộ nào phù hợp nếu em muốn luyện kỹ năng giao tiếp?	Bạn có thể ưu tiên các nhóm kỹ năng mềm, tổ chức sự kiện, truyền thông, tình nguyện hoặc các câu lạc bộ có nhiều hoạt động tương tác. Những môi trường này thường giúp bạn va chạm thực tế nhiều hơn.
+1623	sinh_vien	Em muốn luyện tiếng Anh ngoài lớp thì nên tham gia hoạt động gì?	Bạn có thể tìm các câu lạc bộ tiếng Anh, nhóm thảo luận, hoạt động giao lưu hoặc các đội nhóm có môi trường dùng tiếng Anh thường xuyên. Học qua tương tác thực tế sẽ dễ tiến bộ hơn chỉ học một mình.
+1624	sinh_vien	Nếu em tham gia câu lạc bộ nhưng không quen ai thì có khó không?	Không sao, đa số sinh viên mới cũng bắt đầu từ trạng thái chưa quen ai. Bạn chỉ cần tham gia đều, chủ động chào hỏi và nhận một vài việc nhỏ là sẽ dần bắt nhịp được.
+1625	sinh_vien	Có nên thử một câu lạc bộ trước rồi mới quyết định gắn bó lâu dài không?	Rất nên, vì trải nghiệm thực tế sẽ cho bạn cảm nhận rõ hơn về môi trường và khối lượng hoạt động. Nhờ vậy bạn tránh chọn theo cảm hứng rồi nhanh chán.
+1626	sinh_vien	Nếu em thấy câu lạc bộ quá áp lực thì có nên rút không?	Có thể, nhưng bạn nên trao đổi trước với người phụ trách và rút một cách lịch sự, rõ ràng. Giữ cách ứng xử chuyên nghiệp sẽ tốt cho cả bạn và tập thể.
+1627	sinh_vien	Sinh viên năm nhất có nên tham gia ban tổ chức sự kiện không?	Có thể, nếu bạn muốn học cách làm việc nhóm, tổ chức và phối hợp thực tế. Tuy nhiên nên bắt đầu từ vai trò vừa sức để tránh bị ngợp.
+1628	sinh_vien	Nếu em chỉ muốn tham gia ở mức nhẹ nhàng chứ không ôm việc lớn thì có được không?	Được, bạn hoàn toàn có thể chọn mức tham gia phù hợp với lịch học và sức của mình. Tham gia đều ở mức vừa phải thường tốt hơn nhận quá nhiều rồi bỏ giữa chừng.
+1629	sinh_vien	Có nên hỏi anh chị khóa trên trước khi tham gia hoạt động không?	Có, vì anh chị thường cho bạn góc nhìn thực tế về môi trường, khối lượng việc và những điều nên chuẩn bị trước. Đây là nguồn tham khảo rất hữu ích cho sinh viên mới.
+1630	sinh_vien	Nếu em bị áp lực vì thấy bạn bè tham gia quá nhiều hoạt động thì sao?	Bạn không cần so sánh nhịp độ của mình với người khác. Mỗi người có cách thích nghi khác nhau, quan trọng là bạn giữ được việc học, sức khỏe và cảm thấy mình đang tiến bộ.
+1631	sinh_vien	Sinh viên năm nhất có nên đi các buổi chào tân sinh viên không?	Nên, vì đây là dịp giúp bạn hiểu môi trường học, gặp bạn mới và biết thêm nhiều kênh hỗ trợ hữu ích. Dù không tham gia mọi hoạt động, bạn vẫn nên thử đi để trải nghiệm.
+1632	sinh_vien	Nếu em ngại đám đông thì đi sự kiện chào tân sinh viên có sao không?	Không sao, bạn có thể tham gia ở mức quan sát trước mà không cần ép mình phải quá nổi bật. Chỉ cần có mặt và làm quen dần cũng đã là một bước hòa nhập tốt.
+1633	sinh_vien	Có nên tham gia hoạt động chỉ vì bạn bè rủ không?	Bạn có thể đi thử, nhưng vẫn nên cân nhắc xem hoạt động đó có hợp với mình hay không. Chọn theo bạn bè đôi khi vui hơn lúc đầu, nhưng lâu dài vẫn cần phù hợp với bản thân.
+1634	sinh_vien	Nếu em bỏ lỡ đợt tuyển thành viên đầu năm thì còn cơ hội tham gia sau không?	Thường vẫn có cơ hội khác, vì nhiều câu lạc bộ tuyển bổ sung hoặc mở hoạt động cho người mới theo từng giai đoạn. Bạn nên tiếp tục theo dõi fanpage hoặc hỏi trực tiếp ban phụ trách.
+1635	sinh_vien	Em muốn tham gia hoạt động nhưng sợ ảnh hưởng điểm học tập thì phải làm sao?	Bạn nên chọn ít hoạt động trước, theo dõi khả năng cân bằng trong vài tuần rồi mới quyết định có tham gia thêm hay không. Quản lý thời gian tốt sẽ giúp bạn không bị cuốn theo quá nhiều thứ một lúc.
+1636	sinh_vien	Có nên tự đặt mục tiêu năm nhất phải tham gia ít nhất một hoạt động không?	Đây là mục tiêu khá hợp lý nếu bạn muốn mở rộng trải nghiệm và kết nối. Chỉ cần mục tiêu đó linh hoạt và không tạo áp lực quá mức cho bản thân.
+1637	sinh_vien	Nếu em chưa biết mình hợp kiểu hoạt động nào thì nên thử ra sao?	Bạn có thể chia theo mục tiêu: kết bạn, rèn kỹ năng, học thuật, tiếng Anh, thể thao hoặc tình nguyện rồi thử từng nhóm nhỏ. Trải nghiệm thực tế sẽ giúp bạn biết mình phù hợp với môi trường nào hơn.
+1638	sinh_vien	Có nên tham gia hoạt động trong ký túc xá để dễ kết bạn hơn không?	Có, đây thường là môi trường gần gũi và dễ làm quen vì bạn gặp nhau thường xuyên trong sinh hoạt hằng ngày. Với sinh viên mới, đây là một cách hòa nhập khá tự nhiên.
+1639	sinh_vien	Nếu em ở ký túc xá mà ít nói chuyện với mọi người thì có bị khó hòa nhập không?	Có thể chậm hơn một chút, nhưng không có nghĩa là bạn không hòa nhập được. Bạn chỉ cần bắt đầu từ những tương tác nhỏ, đều đặn như chào hỏi, hỏi thăm hoặc tham gia một vài việc chung.
+1640	sinh_vien	Sinh viên mới nên ưu tiên kết bạn trong lớp hay trong nơi ở trước?	Cả hai đều quan trọng, nhưng bạn nên ưu tiên những mối quan hệ gần gũi nhất với lịch sinh hoạt hằng ngày của mình. Bạn bè trong lớp hỗ trợ học tập, còn người ở gần giúp bạn thích nghi đời sống nhanh hơn.
+1641	sinh_vien	Nếu em thấy cô đơn trong thời gian đầu đại học thì có bình thường không?	Rất bình thường, vì bạn đang bước vào một môi trường mới với nhịp sống khác hẳn trước đây. Hãy cho bản thân thời gian thích nghi và chủ động kết nối từng chút một.
+1642	sinh_vien	Làm sao để năm nhất đỡ bỡ ngỡ hơn trong sinh hoạt hằng ngày?	Bạn nên giữ nề nếp đơn giản như ngủ đúng giờ, theo dõi lịch học, chuẩn bị đồ từ tối hôm trước và lưu các đầu mối hỗ trợ quan trọng. Nề nếp ổn thì cảm giác bối rối cũng giảm đi rất nhiều.
+1643	sinh_vien	Sinh viên năm nhất nên tập kỹ năng nào trước để sống tự lập tốt hơn?	Bạn nên ưu tiên quản lý thời gian, quản lý chi tiêu, giữ giấy tờ, giao tiếp cơ bản và tự chăm sóc sinh hoạt hằng ngày. Đây là những kỹ năng dùng ngay trong giai đoạn đầu.
+1644	sinh_vien	Nếu em tiêu xài không kiểm soát khi mới sống xa nhà thì nên làm gì?	Bạn nên bắt đầu ghi lại các khoản chi cơ bản trong vài tuần đầu để biết mình đang dùng tiền vào đâu. Khi nhìn rõ thói quen chi tiêu, bạn sẽ dễ điều chỉnh hơn.
+1645	sinh_vien	Sinh viên ở ký túc xá có nên lên lịch sinh hoạt cá nhân không?	Có, vì lịch sinh hoạt giúp bạn cân bằng học, nghỉ, ăn uống và hoạt động khác một cách ổn định hơn. Với năm nhất, sự đều đặn thường quan trọng hơn sự hoàn hảo.
+1646	sinh_vien	Nếu em vừa học vừa làm thêm thì có nên tham gia ít hoạt động hơn không?	Có thể, vì bạn cần giữ sức và bảo đảm việc học không bị ảnh hưởng. Hãy ưu tiên chất lượng hơn số lượng trong mọi hoạt động mình tham gia.
+1647	sinh_vien	Em có nên học cách nói không khi bị rủ tham gia quá nhiều hoạt động không?	Rất nên, vì đây là kỹ năng quan trọng để bảo vệ thời gian và sức lực của bạn. Từ chối lịch sự còn tốt hơn nhận lời rồi không theo được.
+1648	sinh_vien	Sinh viên năm nhất cần lưu ý gì để không bị quá tải ngay học kỳ đầu?	Bạn nên tránh ôm quá nhiều việc một lúc, theo dõi sức khỏe, ngủ đủ, ăn uống đều và chọn hoạt động thật sự cần thiết. Học kỳ đầu là giai đoạn làm quen, không phải cuộc đua phải làm hết mọi thứ.
+1649	sinh_vien	Nếu em thấy mình chậm hơn bạn bè trong việc hòa nhập thì có sao không?	Không sao cả, mỗi người có tốc độ thích nghi khác nhau. Quan trọng là bạn vẫn đang tiến lên từng bước và không bỏ mặc bản thân trong cảm giác cô lập.
+1650	sinh_vien	Năm nhất có cần cố gắng hoàn hảo mọi thứ ngay từ đầu không?	Không cần, vì giai đoạn đầu chủ yếu là làm quen và điều chỉnh dần. Bạn chỉ cần xây nền tảng ổn định về học tập, sinh hoạt và tinh thần là đã rất tốt rồi.
+1651	sinh_vien	Thư viện trường dùng để làm gì ngoài việc mượn sách?	Thư viện thường không chỉ để mượn sách mà còn là nơi tự học, tra cứu tài liệu, sử dụng máy tính, in ấn hoặc tìm không gian học yên tĩnh. Tùy trường, thư viện còn có thêm phòng học nhóm hoặc khu tài liệu điện tử.
+1652	sinh_vien	Sinh viên năm nhất có nên làm quen thư viện sớm không?	Có, vì thư viện là một trong những nơi hỗ trợ học tập hữu ích nhất ngay từ đầu năm. Làm quen sớm sẽ giúp bạn biết cách tìm tài liệu, chỗ học và sử dụng các dịch vụ cần thiết.
+1653	sinh_vien	Em muốn biết thư viện trường nằm ở đâu thì xem ở đâu?	Bạn có thể xem trên bản đồ trường, website chính thức, cổng thông tin sinh viên hoặc hỏi bảo vệ và bạn học. Trong những tuần đầu, nên lưu lại vị trí thư viện để thuận tiện tra cứu sau này.
+1654	sinh_vien	Thư viện thường mở cửa vào giờ nào?	Giờ mở cửa của thư viện tùy theo quy định của từng trường và có thể khác nhau giữa ngày thường, cuối tuần hoặc dịp thi. Bạn nên xem website, fanpage hoặc bảng thông báo của thư viện để biết giờ cụ thể.
+1655	sinh_vien	Cuối tuần thư viện có mở không?	Tùy trường, một số thư viện có mở cuối tuần còn một số nơi chỉ phục vụ theo khung giờ giới hạn. Bạn nên kiểm tra lịch phục vụ chính thức trước khi đến.
+1656	sinh_vien	Thư viện có chỗ tự học cho sinh viên không?	Thông thường có, vì thư viện là nơi được nhiều sinh viên chọn để tự học nhờ không gian yên tĩnh và có bàn ghế phù hợp. Một số nơi còn có khu học nhóm hoặc khu học cá nhân riêng.
+1657	sinh_vien	Em có cần thẻ sinh viên để vào thư viện không?	Nhiều trường yêu cầu thẻ sinh viên hoặc tài khoản sinh viên để sử dụng thư viện và các dịch vụ liên quan. Bạn nên mang theo thẻ khi đến thư viện để tránh bất tiện. 
+1658	sinh_vien	Nếu quên thẻ sinh viên thì có vào thư viện được không?	Tùy quy định từng nơi, bạn có thể bị hạn chế vào thư viện hoặc không sử dụng được một số dịch vụ như mượn sách và vào khu chức năng. Tốt nhất bạn nên mang thẻ theo thường xuyên.
+1659	sinh_vien	Em muốn mượn sách ở thư viện thì làm sao?	Thông thường bạn cần có thẻ sinh viên hoặc tài khoản thư viện, sau đó làm theo hướng dẫn mượn tại quầy hoặc trên hệ thống. Nếu chưa từng mượn lần nào, bạn nên hỏi nhân viên thư viện để được hướng dẫn nhanh.
+1660	sinh_vien	Một lần em được mượn bao nhiêu cuốn sách ở thư viện?	Số lượng sách được mượn mỗi lần tùy theo quy định của thư viện. Bạn nên xem nội quy thư viện hoặc hỏi quầy phục vụ để biết giới hạn cụ thể.
+1661	sinh_vien	Sách thư viện được mượn trong bao lâu?	Thời hạn mượn sách phụ thuộc vào loại tài liệu và quy định của từng thư viện. Có nơi cho mượn ngắn ngày, có nơi cho mượn dài hơn với một số loại sách nhất định.
+1662	sinh_vien	Em có thể gia hạn sách thư viện không?	Nhiều thư viện cho phép gia hạn nếu sách chưa có người đặt mượn hoặc vẫn còn trong điều kiện cho phép. Bạn nên kiểm tra trên hệ thống hoặc hỏi trực tiếp quầy thư viện.
+1663	sinh_vien	Nếu em trả sách trễ thì có sao không?	Tùy quy định, bạn có thể bị nhắc nhở, tạm hạn chế quyền mượn hoặc chịu xử lý theo nội quy thư viện. Vì vậy bạn nên chú ý hạn trả ngay khi mượn sách.
+1664	sinh_vien	Nếu làm mất sách thư viện thì phải làm sao?	Bạn nên báo ngay cho thư viện để được hướng dẫn xử lý theo quy định. Thông thường sẽ có quy trình bồi hoàn hoặc xử lý tương ứng với loại tài liệu bị mất.
+1665	sinh_vien	Nếu làm hư sách thư viện thì có bị phạt không?	Tùy mức độ hư hỏng, thư viện có thể yêu cầu bồi hoàn hoặc xử lý theo nội quy. Khi sử dụng sách mượn, bạn nên giữ gìn cẩn thận như tài sản chung của trường.
+1666	sinh_vien	Em có thể tra cứu sách thư viện online không?	Nhiều thư viện có hệ thống tra cứu sách trực tuyến để sinh viên tìm tên sách, tác giả, mã số hoặc tình trạng còn/mượn. Bạn nên xem website thư viện hoặc hỏi nhân viên để biết cách tra cứu.
+1667	sinh_vien	Thư viện có máy tính cho sinh viên dùng không?	Một số thư viện có máy tính phục vụ tra cứu hoặc học tập, nhưng số lượng và cách sử dụng tùy theo từng nơi. Bạn nên xem quy định của thư viện trước khi sử dụng.
+1668	sinh_vien	Thư viện có wifi không?	Nhiều thư viện có wifi hoặc hỗ trợ kết nối mạng cho sinh viên học tập và tra cứu tài liệu. Nếu không dùng được, bạn nên hỏi cách đăng nhập đúng tài khoản.
+1669	sinh_vien	Thư viện có phòng học nhóm không?	Một số thư viện có phòng học nhóm hoặc khu vực thảo luận riêng cho sinh viên. Nếu có nhu cầu học nhóm, bạn nên hỏi xem có cần đặt chỗ trước hay không.
+1670	sinh_vien	Em muốn học nhóm ở thư viện thì có được không?	Có thể, nhưng bạn nên sử dụng đúng khu vực cho phép và giữ âm lượng phù hợp. Nếu thư viện có phòng nhóm riêng thì đó thường là nơi thích hợp nhất.
+1671	sinh_vien	Có được nói chuyện trong thư viện không?	Thông thường sinh viên cần giữ yên lặng hoặc chỉ trao đổi nhỏ trong khu vực quy định. Bạn nên tôn trọng không gian học tập chung để không ảnh hưởng người khác.
+1672	sinh_vien	Có được ăn uống trong thư viện không?	Tùy nội quy từng thư viện, nhiều nơi hạn chế hoặc không cho ăn uống để giữ vệ sinh và bảo quản tài liệu. Bạn nên xem quy định cụ thể trước khi mang đồ ăn thức uống vào.
+1673	sinh_vien	Có được mang balo vào thư viện không?	Một số thư viện cho mang balo vào, một số nơi yêu cầu để ở khu vực riêng hoặc tủ gửi đồ. Bạn nên làm theo hướng dẫn của thư viện để tránh phiền phức khi vào cổng.
+1674	sinh_vien	Thư viện có tủ gửi đồ cho sinh viên không?	Tùy nơi, thư viện có thể có tủ gửi đồ hoặc khu để tư trang trước khi vào học. Bạn nên hỏi nhân viên thư viện nếu cần cất đồ an toàn.
+1675	sinh_vien	Nếu em làm mất thẻ thư viện hoặc không dùng được tài khoản thư viện thì làm sao?	Bạn nên liên hệ thư viện hoặc bộ phận phụ trách thẻ/tài khoản sinh viên để được kiểm tra và hướng dẫn cấp lại hoặc khôi phục. Không nên chờ đến lúc cần gấp mới xử lý.
+1676	sinh_vien	Có được cho người khác mượn thẻ thư viện của mình không?	Thông thường không nên và nhiều nơi không cho phép, vì thẻ thư viện gắn với tài khoản cá nhân của bạn. Việc cho mượn thẻ có thể gây rắc rối nếu phát sinh mất sách hoặc vi phạm nội quy.
+1677	sinh_vien	Trường có phòng y tế hoặc hỗ trợ sức khỏe cho sinh viên không?	Nhiều trường có phòng y tế, bộ phận hỗ trợ sức khỏe hoặc đầu mối hướng dẫn khi sinh viên có vấn đề về sức khỏe. Bạn nên tìm hiểu sớm vị trí và cách liên hệ để dùng khi cần.
+1678	sinh_vien	Em muốn biết phòng y tế trường ở đâu thì xem ở đâu?	Bạn có thể xem bản đồ trường, website, cổng thông tin sinh viên hoặc hỏi bảo vệ, giáo vụ và bạn học. Nên lưu lại vị trí này ngay từ đầu vì có thể cần lúc khẩn cấp.
+1679	sinh_vien	Nếu em bị mệt trong giờ học thì nên làm gì?	Bạn nên báo với giảng viên hoặc người phụ trách lớp để được hỗ trợ, nghỉ ngơi hoặc đến phòng y tế nếu cần. Không nên cố chịu khi cơ thể đang có dấu hiệu bất thường.
+1680	sinh_vien	Nếu em bị ngất hoặc gặp tình huống khẩn cấp trong trường thì ai hỗ trợ?	Bạn nên nhờ giảng viên, bạn học, bảo vệ hoặc liên hệ ngay phòng y tế/bộ phận hỗ trợ của trường. Trong tình huống khẩn cấp, việc báo cho người gần nhất biết là rất quan trọng.
+1681	sinh_vien	Phòng y tế trường có sơ cứu cho sinh viên không?	Nhiều phòng y tế trường hỗ trợ sơ cứu ban đầu hoặc hướng dẫn sinh viên xử lý bước đầu trước khi chuyển đến cơ sở y tế nếu cần. Mức hỗ trợ cụ thể tùy theo điều kiện của từng trường.
+1682	sinh_vien	Nếu em bị sốt hoặc đau nhẹ ở trường thì có thể đến phòng y tế không?	Có thể, bạn nên đến để được hướng dẫn ban đầu hoặc biết nên nghỉ ngơi, theo dõi hay đi khám ở đâu tiếp theo. Khi sức khỏe không ổn, đừng cố gắng học tiếp nếu thấy không chịu nổi.
+1683	sinh_vien	Trường có hỗ trợ khám sức khỏe cho sinh viên không?	Tùy trường, có nơi tổ chức khám sức khỏe đầu khóa hoặc hỗ trợ theo từng đợt cho sinh viên. Bạn nên theo dõi thông báo chính thức để biết thời gian và hình thức thực hiện.
+1684	sinh_vien	Sinh viên năm nhất có cần khám sức khỏe đầu khóa không?	Nhiều trường có yêu cầu hoặc tổ chức khám sức khỏe cho sinh viên mới theo kế hoạch từng năm. Bạn nên xem kỹ thông báo đầu khóa để chuẩn bị đúng giấy tờ nếu có yêu cầu.
+1685	sinh_vien	Nếu em có bảo hiểm y tế sinh viên thì dùng khi nào?	Bảo hiểm y tế thường được dùng khi đi khám chữa bệnh theo quy định hiện hành và các điều kiện áp dụng của nơi khám. Nếu chưa rõ quyền lợi hoặc nơi sử dụng, bạn nên hỏi đầu mối phụ trách bảo hiểm của trường.
+1686	sinh_vien	Em muốn hỏi về bảo hiểm y tế sinh viên thì liên hệ ai?	Bạn nên liên hệ phòng công tác sinh viên, bộ phận hành chính liên quan hoặc đầu mối được trường chỉ định phụ trách bảo hiểm. Khi hỏi, bạn nên chuẩn bị sẵn mã số sinh viên và tình trạng cụ thể.
+1687	sinh_vien	Nếu em bị tai nạn nhỏ trong trường thì phải làm sao?	Bạn nên báo ngay cho người gần nhất như giảng viên, bạn học, bảo vệ hoặc phòng y tế để được hỗ trợ kịp thời. Không nên tự xử lý một mình nếu thấy choáng, đau nhiều hoặc có chảy máu.
+1688	sinh_vien	Trường có hỗ trợ tư vấn tâm lý cho sinh viên không?	Một số trường có dịch vụ tư vấn tâm lý hoặc đầu mối hỗ trợ tinh thần cho sinh viên. Nếu bạn cảm thấy áp lực kéo dài, nên chủ động tìm sự hỗ trợ sớm.
+1689	sinh_vien	Nếu em thấy stress vì học tập và cuộc sống năm nhất thì nên làm gì?	Bạn nên điều chỉnh lại lịch sinh hoạt, chia sẻ với người tin cậy và tìm hỗ trợ từ cố vấn học tập hoặc bộ phận hỗ trợ sinh viên nếu cần. Giải quyết sớm thường sẽ nhẹ hơn để kéo dài quá lâu.
+1690	sinh_vien	Em muốn biết chỗ gửi xe cho sinh viên ở đâu thì xem ở đâu?	Bạn có thể xem sơ đồ trường, bảng hướng dẫn hoặc hỏi bảo vệ và sinh viên khóa trên. Với sinh viên mới, nên đi sớm để có thời gian tìm đúng khu gửi xe.
+1691	sinh_vien	Trường có bãi giữ xe cho sinh viên không?	Nhiều trường có khu gửi xe dành cho sinh viên, nhưng vị trí, giờ hoạt động và cách gửi xe tùy từng nơi. Bạn nên hỏi rõ ngay từ đầu để tránh lúng túng khi đi học.
+1692	sinh_vien	Gửi xe trong trường có cần thẻ hay vé xe không?	Tùy hệ thống quản lý của trường, sinh viên có thể dùng vé xe, thẻ sinh viên hoặc hình thức xác nhận khác khi gửi xe. Bạn nên xem quy định của bãi xe nơi mình sử dụng.
+1693	sinh_vien	Nếu em làm mất vé xe thì phải làm sao?	Bạn nên báo ngay cho nhân viên bãi xe hoặc bảo vệ để được hướng dẫn thủ tục xác minh và nhận xe theo quy định. Việc này có thể mất thời gian hơn bình thường nên bạn nên giữ vé cẩn thận.
+1694	sinh_vien	Nếu em quẹt thẻ gửi xe mà không được thì phải làm sao?	Bạn nên báo nhân viên bãi xe hoặc bộ phận phụ trách thẻ để được kiểm tra. Có thể do lỗi hệ thống, thẻ chưa kích hoạt hoặc thẻ đang gặp vấn đề kỹ thuật.
+1695	sinh_vien	Nếu em lấy xe ra trễ hơn giờ bình thường thì có sao không?	Tùy quy định của bãi xe, bạn có thể gặp khó khăn nếu đến quá muộn hoặc ngoài giờ hoạt động. Nếu biết mình sẽ về trễ, nên hỏi trước cách xử lý để tránh bị động.
+1696	sinh_vien	Bãi xe trong trường có mở cả ngày không?	Điều này phụ thuộc vào quy định vận hành của từng trường hoặc từng khu gửi xe. Bạn nên nắm trước giờ mở - đóng để chủ động lịch học và sinh hoạt.
+1697	sinh_vien	Nếu em gửi xe ở trường mà bị trầy xước hoặc mất phụ kiện thì phải làm sao?	Bạn nên báo ngay cho nhân viên bãi xe hoặc bộ phận phụ trách để được ghi nhận tình trạng và hướng dẫn xử lý. Khi gửi xe, bạn cũng nên kiểm tra và khóa xe cẩn thận.
+1698	sinh_vien	Có nên đi học sớm để dễ tìm chỗ gửi xe không?	Có, nhất là vào những khung giờ đông sinh viên hoặc đầu buổi học. Đi sớm giúp bạn đỡ gấp gáp và tránh ảnh hưởng giờ vào lớp.
+1699	sinh_vien	Sinh viên năm nhất có nên hỏi trước đường đi từ cổng vào giảng đường không?	Rất nên, vì điều này giúp bạn tránh đi lạc và chủ động thời gian trong những ngày đầu. Bạn có thể hỏi bạn bè, bảo vệ hoặc xem bản đồ trường trước khi đến.
+1700	sinh_vien	Em muốn tìm phòng học nhưng trong trường rộng quá thì làm sao?	Bạn nên xem sơ đồ trường, hỏi bảo vệ, hỏi bạn học hoặc đến sớm hơn để tìm trước. Trong tuần đầu, việc đi lạc là rất bình thường nên bạn không cần quá lo.
+1701	sinh_vien	Trường có bản đồ khuôn viên hoặc sơ đồ các dãy nhà không?	Nhiều trường có bản đồ khuôn viên trên website, bảng chỉ dẫn hoặc các tài liệu dành cho sinh viên mới. Bạn nên lưu lại để tiện tra cứu khi cần.
+1702	sinh_vien	Em có nên chụp lại sơ đồ trường trong điện thoại không?	Có, đây là cách rất tiện cho sinh viên mới khi chưa quen vị trí các khu học tập và dịch vụ. Một bức ảnh sơ đồ có thể giúp bạn đỡ mất thời gian tìm đường.
+1703	sinh_vien	Trong trường có chỗ ăn uống cho sinh viên không?	Nhiều trường có căn tin, quầy nước hoặc khu ăn uống phục vụ sinh viên trong ngày học. Vị trí và thời gian hoạt động tùy theo từng trường.
+1704	sinh_vien	Căn tin trường thường bán vào khung giờ nào?	Thời gian phục vụ của căn tin tùy theo đơn vị vận hành và nhu cầu thực tế của sinh viên. Bạn nên đến thử vài khung giờ đầu để biết thời điểm đông - vắng.
+1705	sinh_vien	Em có thể mang đồ ăn từ ngoài vào trường không?	Tùy nội quy từng trường và từng khu vực sử dụng, việc mang đồ ăn từ ngoài vào có thể được phép hoặc bị hạn chế ở một số nơi. Bạn nên chú ý giữ vệ sinh và không làm ảnh hưởng người khác.
+1706	sinh_vien	Có được ăn uống trong lớp học không?	Tùy nội quy lớp học và giảng viên, nhưng nhìn chung sinh viên nên hạn chế để giữ vệ sinh và tránh gây mùi hoặc mất tập trung. Nếu không chắc, bạn nên ăn trước hoặc sau giờ học.
+1707	sinh_vien	Căn tin có chỗ ngồi học hoặc nghỉ giữa giờ không?	Một số căn tin có khu ngồi rộng để sinh viên nghỉ, ăn uống hoặc chờ giữa các tiết học. Tuy nhiên đây không phải lúc nào cũng là nơi phù hợp để học lâu nếu quá đông hoặc ồn.
+1708	sinh_vien	Nếu căn tin đông quá thì sinh viên thường làm sao?	Bạn có thể đi sớm hơn, đi muộn hơn một chút hoặc tìm khu ăn uống khác trong trường nếu có. Qua vài tuần đầu, bạn sẽ quen dần các khung giờ ít đông hơn.
+1709	sinh_vien	Trong trường có chỗ lấy nước uống không?	Tùy trường, có nơi bố trí máy nước uống hoặc khu tiện ích cho sinh viên. Bạn nên hỏi bạn học hoặc quan sát các khu sinh hoạt chung để biết vị trí.
+1710	sinh_vien	Em có nên mang bình nước cá nhân khi đi học không?	Rất nên, vì vừa tiện vừa giúp bạn chủ động hơn trong những ngày học nhiều tiết. Đây cũng là thói quen tốt cho sức khỏe và sinh hoạt hằng ngày.
+1711	sinh_vien	Thẻ sinh viên dùng để làm gì ngoài việc xác nhận danh tính?	Ở nhiều trường, thẻ sinh viên còn được dùng cho thư viện, bãi xe, một số dịch vụ trong trường, vào khu chức năng hoặc các hoạt động sinh viên. Vì vậy bạn nên giữ thẻ cẩn thận và mang theo thường xuyên.
+1712	sinh_vien	Khi nào sinh viên mới được nhận thẻ sinh viên?	Thời điểm nhận thẻ tùy theo quy trình làm thẻ và kế hoạch của từng trường. Bạn nên theo dõi thông báo đầu khóa hoặc hỏi bộ phận phụ trách nếu chờ lâu chưa thấy.
+1713	sinh_vien	Nếu em chưa có thẻ sinh viên thì có ảnh hưởng gì không?	Bạn có thể gặp bất tiện khi dùng thư viện, làm thủ tục, vào một số khu vực hoặc sử dụng các dịch vụ cần xác minh sinh viên. Nếu trường chưa cấp thẻ, bạn nên hỏi xem có giấy tờ thay thế tạm thời hay không.
+1714	sinh_vien	Nếu thẻ sinh viên bị mất thì em phải làm sao?	Bạn nên báo ngay cho bộ phận phụ trách để được hướng dẫn khóa, cấp lại hoặc cập nhật thông tin nếu cần. Không nên để quá lâu vì thẻ có thể liên quan đến nhiều dịch vụ trong trường.
+1715	sinh_vien	Nếu thẻ sinh viên bị hỏng hoặc không quét được thì xử lý sao?	Bạn nên mang thẻ đến bộ phận phụ trách để được kiểm tra và hướng dẫn đổi/cấp lại nếu cần. Trong thời gian đó, bạn nên hỏi xem có cách xác minh tạm thời nào không.
+1716	sinh_vien	Em có nên chụp ảnh lại thẻ sinh viên trong điện thoại không?	Có thể lưu ảnh để tiện tra cứu thông tin khi cần, nhưng ảnh chụp thường không thay thế được thẻ thật trong nhiều tình huống. Vì vậy bạn vẫn nên giữ thẻ gốc cẩn thận.
+1717	sinh_vien	Thẻ sinh viên có thể dùng để vào phòng gym hoặc khu thể thao của trường không?	Ở một số trường, thẻ sinh viên được dùng để vào các khu thể thao, phòng gym hoặc dịch vụ nội khu khác. Việc này phụ thuộc vào hệ thống quản lý của từng trường.
+1718	sinh_vien	Thẻ sinh viên có dùng để photo, in ấn hoặc dùng máy trong trường được không?	Một số trường tích hợp thẻ sinh viên với các dịch vụ như in ấn, photo hoặc truy cập tiện ích trong trường. Bạn nên hỏi bộ phận hỗ trợ sinh viên hoặc trung tâm dịch vụ để biết chức năng cụ thể.
+1719	sinh_vien	Sinh viên năm nhất nên làm gì nếu chưa hiểu cách dùng thẻ sinh viên?	Bạn nên hỏi trực tiếp bộ phận phụ trách, thư viện, bãi xe hoặc các anh chị sinh viên để biết các chức năng của thẻ. Hỏi sớm sẽ giúp bạn tận dụng được nhiều tiện ích hơn.
+1720	sinh_vien	Em nên cất thẻ sinh viên ở đâu để đỡ quên?	Bạn nên để trong ví, túi đeo thẻ hoặc ngăn cố định trong balo để tạo thói quen mang theo mỗi ngày. Càng để cố định một chỗ thì càng ít bị quên.
+1721	sinh_vien	Wifi trong trường có dùng miễn phí cho sinh viên không?	Nhiều trường có wifi dành cho sinh viên trong khu học tập và một số khu sinh hoạt chung. Bạn nên xem hướng dẫn kết nối của trường hoặc hỏi bộ phận hỗ trợ nếu chưa đăng nhập được.
+1722	sinh_vien	Em muốn biết tên wifi chính thức của trường thì xem ở đâu?	Bạn có thể xem trên website trường, hướng dẫn dành cho sinh viên mới, bảng thông báo hoặc hỏi bộ phận kỹ thuật/IT. Nên dùng đúng mạng chính thức để tránh kết nối nhầm.
+1723	sinh_vien	Kết nối wifi trường thường cần tài khoản gì?	Nhiều trường dùng tài khoản sinh viên, email trường hoặc thông tin đăng nhập hệ thống để kết nối wifi. Nếu bạn chưa rõ, nên xem hướng dẫn IT hoặc hỏi helpdesk.
+1724	sinh_vien	Nếu em không vào được wifi trường thì phải làm sao?	Bạn nên kiểm tra lại đúng tên wifi, tài khoản đăng nhập và mật khẩu trước. Nếu vẫn không được, hãy liên hệ bộ phận IT, helpdesk hoặc đầu mối hỗ trợ sinh viên để được kiểm tra.
+1725	sinh_vien	Wifi trong trường yếu thì em nên xử lý thế nào?	Bạn có thể thử đổi vị trí ngồi, đăng nhập lại hoặc kiểm tra xem khu vực đó có đông người dùng hay không. Nếu lỗi kéo dài, bạn nên báo bộ phận kỹ thuật để họ kiểm tra thêm.
+1726	sinh_vien	Wifi trong thư viện và trong lớp có giống nhau không?	Tùy hệ thống của trường, có nơi dùng chung một mạng sinh viên, có nơi chia theo khu vực hoặc mục đích sử dụng. Bạn nên xem đúng hướng dẫn cho từng khu nếu có khác biệt.
+1727	sinh_vien	Wifi ở ký túc xá có khác wifi ở khu học tập không?	Nhiều trường tách riêng mạng ở ký túc xá và mạng ở khu học tập để tiện quản lý. Nếu bạn ở nội trú, nên hỏi ban quản lý hoặc IT về cách kết nối đúng cho khu ở.
+1728	sinh_vien	Em có thể dùng wifi trường để học online và tải tài liệu không?	Thông thường có thể, miễn là bạn dùng đúng mục đích học tập và tuân thủ quy định sử dụng mạng của trường. Khi cần tải tài liệu lớn, bạn nên chọn nơi sóng ổn định hơn.
+1729	sinh_vien	Nếu em đổi điện thoại hoặc laptop thì có cần đăng nhập lại wifi trường không?	Thường là có, vì mỗi thiết bị mới có thể cần đăng nhập hoặc đăng ký lại trên hệ thống. Nếu gặp lỗi, bạn nên kiểm tra hướng dẫn kết nối dành cho thiết bị mới.
+1730	sinh_vien	Em muốn đổi mật khẩu tài khoản trường thì làm ở đâu?	Bạn nên vào cổng tài khoản, hệ thống IT của trường hoặc hỏi helpdesk để được hướng dẫn đúng quy trình. Đổi mật khẩu sớm cũng giúp tăng an toàn cho tài khoản cá nhân.
+1731	sinh_vien	Email sinh viên dùng để làm gì vậy?	Email sinh viên thường được dùng để nhận thông báo chính thức, xác thực tài khoản, học trực tuyến, nộp hồ sơ hoặc dùng các dịch vụ công nghệ của trường. Bạn nên kiểm tra email này thường xuyên thay vì chỉ dùng email cá nhân.
+1732	sinh_vien	Em muốn biết email sinh viên của mình là gì thì xem ở đâu?	Bạn có thể xem trong hướng dẫn nhập học, cổng thông tin sinh viên hoặc hỏi bộ phận hỗ trợ tài khoản của trường. Nếu chưa được cấp, bạn nên hỏi sớm để tránh bỏ lỡ thông báo.
+1733	sinh_vien	Nếu em không đăng nhập được email sinh viên thì phải làm sao?	Bạn nên kiểm tra đúng địa chỉ email, mật khẩu và cổng đăng nhập trước. Nếu vẫn lỗi, hãy liên hệ helpdesk hoặc bộ phận CNTT để được cấp lại hoặc hỗ trợ khôi phục.
+1734	sinh_vien	Có nên kiểm tra email sinh viên mỗi ngày không?	Có, vì nhiều thông báo quan trọng về học tập, lịch học, thủ tục hoặc hoạt động sinh viên có thể được gửi qua email trường. Tạo thói quen kiểm tra hằng ngày sẽ giúp bạn ít bỏ sót việc hơn.
+1735	sinh_vien	Email sinh viên có khác email cá nhân của em không?	Có, đây thường là email do trường cấp và gắn với tư cách sinh viên của bạn trong hệ thống. Bạn nên dùng email này cho các việc liên quan học tập và dịch vụ của trường.
+1736	sinh_vien	Em nên dùng email sinh viên hay email cá nhân để nhận thông báo học tập?	Bạn nên ưu tiên email sinh viên vì đây thường là kênh chính thức của nhà trường. Email cá nhân chỉ nên dùng bổ sung khi cần.
+1737	sinh_vien	Nếu em quên mật khẩu email sinh viên thì xử lý sao?	Bạn nên làm theo hướng dẫn khôi phục tài khoản của trường hoặc liên hệ helpdesk để được hỗ trợ. Khi đổi lại mật khẩu, bạn nên lưu ở nơi an toàn để tránh quên lặp lại.
+1738	sinh_vien	Trường có hệ thống in ấn cho sinh viên không?	Nhiều trường có máy in tại thư viện, phòng máy, trung tâm học tập hoặc khu dịch vụ sinh viên. Bạn nên hỏi vị trí máy in và cách sử dụng ngay từ đầu để khi cần không bị lúng túng.
+1739	sinh_vien	Em muốn in tài liệu trong trường thì làm ở đâu?	Bạn có thể in tại thư viện, phòng máy, khu dịch vụ sinh viên hoặc các máy in công cộng trong campus nếu trường có bố trí. Vị trí cụ thể tùy từng trường.
+1740	sinh_vien	Có thể in tài liệu từ laptop cá nhân trong trường không?	Một số trường hỗ trợ in từ thiết bị cá nhân qua cổng web print hoặc hệ thống in chung nếu bạn kết nối đúng mạng trường. Bạn nên xem hướng dẫn của bộ phận IT hoặc điểm in ấn.
+1741	sinh_vien	In tài liệu trong trường có cần tài khoản sinh viên không?	Nhiều hệ thống in trong trường yêu cầu tài khoản sinh viên hoặc mã đăng nhập để gửi lệnh in. Có nơi còn cần thẻ sinh viên để nhận bản in tại máy.
+1742	sinh_vien	Thẻ sinh viên có dùng để lấy bản in ở máy in không?	Ở một số trường có tích hợp chức năng này, sinh viên dùng thẻ để xác nhận và release lệnh in tại máy. Việc này tùy thuộc vào hệ thống của từng trường.
+1743	sinh_vien	Nếu em gửi lệnh in rồi mà máy không in ra thì phải làm sao?	Bạn nên kiểm tra lại file, tài khoản đăng nhập, kết nối mạng và máy in đã chọn. Nếu vẫn không được, hãy hỏi nhân viên thư viện, phòng máy hoặc helpdesk.
+1744	sinh_vien	Trường có chỗ photo tài liệu cho sinh viên không?	Nhiều trường có khu photo, in ấn hoặc dịch vụ gần thư viện và khu học tập. Bạn có thể hỏi bạn học, bảo vệ hoặc tìm trong khu dịch vụ sinh viên.
+1745	sinh_vien	Em có thể in đen trắng và in màu trong trường không?	Tùy cơ sở vật chất của trường, có nơi hỗ trợ cả in đen trắng lẫn in màu, có nơi chỉ có một số loại cơ bản. Bạn nên hỏi trước để chuẩn bị file phù hợp.
+1746	sinh_vien	Nếu em cần in gấp trước giờ học thì nên làm sao?	Bạn nên đi sớm hơn một chút và biết sẵn vị trí các điểm in trong trường. Nếu là tài liệu quan trọng, nên chuẩn bị từ trước để tránh phụ thuộc vào lúc đông người.
+1747	sinh_vien	Em có cần mang USB theo khi đi học không?	Có thể hữu ích trong một số trường hợp như in tài liệu, chép file hoặc dùng máy công cộng khi cần. Tuy nhiên nếu bạn lưu file trên đám mây thì cũng sẽ tiện và an toàn hơn.
+1748	sinh_vien	Trong trường có chỗ sạc điện thoại không?	Một số thư viện, khu học chung hoặc không gian sinh viên có thể có điểm sạc thiết bị hoặc ổ cắm công cộng. Bạn nên quan sát các khu sinh hoạt chung hoặc hỏi nhân viên hỗ trợ.
+1749	sinh_vien	Nếu điện thoại sắp hết pin giữa buổi học thì làm sao?	Bạn có thể tranh thủ sạc ở khu cho phép, dùng pin dự phòng hoặc tìm các điểm sạc trong thư viện/khu học tập nếu có. Tốt nhất là nên sạc đầy từ nhà trước khi đi học dài buổi.
+1750	sinh_vien	Có nên mang pin dự phòng khi đi học không?	Rất nên nếu bạn học cả ngày hoặc thường dùng điện thoại để xem thời khóa biểu, email, bản đồ và liên lạc. Đây là món khá hữu ích với sinh viên mới.
+1751	sinh_vien	Em có thể sạc laptop trong thư viện hoặc lớp học không?	Tùy vị trí và số lượng ổ cắm, nhiều nơi cho phép sinh viên sạc thiết bị phục vụ học tập. Bạn nên dùng gọn gàng và tránh chiếm chỗ gây vướng cho người khác.
+1752	sinh_vien	Nếu trong lớp ít ổ cắm quá thì em nên chuẩn bị gì?	Bạn nên sạc đầy trước khi đi học, mang pin dự phòng cho điện thoại và chỉ dùng laptop khi thật cần thiết. Với những ngày học dài, chuẩn bị trước sẽ đỡ bị động hơn.
+1753	sinh_vien	Có nên mang ổ cắm nối khi ở ký túc xá hoặc học cả ngày không?	Có thể hữu ích, nhưng bạn chỉ nên dùng loại an toàn và phù hợp với nội quy nơi ở hoặc nơi học. Với ký túc xá, nên ưu tiên an toàn điện trước hết.
+1754	sinh_vien	Trong trường có nhà vệ sinh ở đâu thì xem thế nào?	Bạn có thể xem sơ đồ trường, bảng chỉ dẫn trong các tòa nhà hoặc hỏi bảo vệ và sinh viên xung quanh. Đây là một thông tin nhỏ nhưng nên biết sớm để đỡ lúng túng.
+1755	sinh_vien	Nếu em học ở dãy nhà lạ mà không biết nhà vệ sinh ở đâu thì làm sao?	Bạn có thể hỏi bạn học, giảng viên, bảo vệ hoặc nhìn bảng chỉ dẫn trong tòa nhà. Ở tuần đầu, việc chưa quen vị trí các khu tiện ích là rất bình thường.
+1756	sinh_vien	Trong trường có chỗ nghỉ trưa cho sinh viên không?	Một số trường có khu sinh hoạt chung, thư viện, hành lang rộng hoặc không gian nghỉ giữa giờ cho sinh viên. Tùy từng trường, bạn nên hỏi chỗ phù hợp để nghỉ mà không ảnh hưởng người khác.
+1757	sinh_vien	Sinh viên thường nghỉ giữa hai tiết ở đâu?	Nhiều bạn chọn thư viện, căn tin, hành lang, khu ghế ngồi chung hoặc các không gian học tập mở trong trường. Sau vài tuần, bạn sẽ quen những chỗ thuận tiện nhất cho mình.
+1758	sinh_vien	Nếu em có khoảng trống 2-3 tiếng giữa các ca học thì nên làm gì?	Bạn có thể vào thư viện, tự học, ăn uống, nghỉ ngơi nhẹ hoặc xử lý các việc cá nhân như in tài liệu, kiểm tra email và ôn bài. Tận dụng khoảng trống tốt sẽ giúp ngày học đỡ mệt hơn.
+1759	sinh_vien	Trong trường có chỗ ngồi học giữa giờ không?	Nhiều trường có khu ghế ngồi, bàn học chung, thư viện hoặc khu học mở cho sinh viên sử dụng giữa các buổi học. Bạn nên để ý các khu yên tĩnh và tiện di chuyển.
+1760	sinh_vien	Em có thể ngồi học ở hành lang hoặc sảnh tòa nhà không?	Tùy không gian và quy định của trường, nhiều sinh viên vẫn ngồi ở sảnh hoặc hành lang rộng khi cần chờ tiết. Tuy nhiên bạn nên chọn chỗ không cản lối đi và giữ trật tự.
+1761	sinh_vien	Trong trường có cây ATM hoặc chỗ rút tiền không?	Một số trường có ATM trong khuôn viên hoặc gần cổng trường để sinh viên tiện giao dịch. Bạn có thể hỏi bảo vệ, sinh viên khóa trên hoặc xem sơ đồ khu vực quanh trường.
+1762	sinh_vien	Nếu cần rút tiền gấp mà không biết ATM ở đâu thì làm sao?	Bạn nên hỏi bảo vệ, căn tin, bãi xe hoặc bạn học gần đó vì họ thường biết khu ATM gần nhất. Bạn cũng có thể tìm trên bản đồ điện thoại nếu đang có mạng.
+1763	sinh_vien	Trong trường có chỗ nhận hàng hoặc bưu phẩm cho sinh viên không?	Tùy trường và hình thức quản lý, ký túc xá hoặc một số bộ phận dịch vụ có thể hỗ trợ nhận thư, bưu phẩm hoặc chỉ dẫn điểm nhận hàng. Bạn nên hỏi ban quản lý nơi ở hoặc bảo vệ nếu thường nhận hàng.
+1764	sinh_vien	Nếu em đặt hàng online mà giao đến trường thì có được không?	Điều này tùy vào quy định của trường, ký túc xá hoặc nơi bạn đang ở. Trước khi đặt, bạn nên chắc rằng có người nhận hoặc có điểm nhận phù hợp.
+1765	sinh_vien	Trường có chỗ giữ đồ thất lạc không?	Một số trường có đầu mối tiếp nhận đồ thất lạc tại bảo vệ, phòng công tác sinh viên hoặc đơn vị quản lý khu vực. Nếu mất đồ, bạn nên hỏi các điểm này sớm.
+1766	sinh_vien	Nếu em làm rơi ví hoặc thẻ trong trường thì nên hỏi ở đâu trước?	Bạn nên hỏi bảo vệ, bãi xe, phòng học mình vừa đi qua hoặc bộ phận tiếp nhận đồ thất lạc nếu có. Càng hỏi sớm thì khả năng tìm lại càng cao.
+1767	sinh_vien	Nếu em nhặt được thẻ sinh viên của người khác thì nên làm gì?	Bạn nên nộp cho bảo vệ, bộ phận công tác sinh viên hoặc nơi tiếp nhận đồ thất lạc để người mất dễ tìm lại. Không nên giữ lâu hoặc tự đăng thông tin nhạy cảm của người khác lên mạng.
+1768	sinh_vien	Sinh viên năm nhất có nên cài app hoặc kênh thông báo chính thức của trường không?	Rất nên, vì app hoặc kênh chính thức thường giúp bạn xem lịch học, thông báo, tài khoản và nhiều tiện ích khác. Cài sớm sẽ giúp bạn đỡ phụ thuộc vào việc hỏi người khác.
+1769	sinh_vien	Nếu em chưa biết trường có app riêng hay không thì hỏi ở đâu?	Bạn có thể xem website trường, fanpage chính thức, tài liệu nhập học hoặc hỏi anh chị khóa trên và bộ phận hỗ trợ sinh viên. Nếu có app, thường trường sẽ có hướng dẫn cài đặt khá rõ.
+1770	sinh_vien	Có nên lưu sẵn các link quan trọng của trường trong điện thoại không?	Rất nên, nhất là các link như cổng sinh viên, email, lịch học, helpdesk, thư viện và fanpage chính thức. Khi cần gấp, có sẵn link sẽ nhanh hơn đi tìm lại từ đầu.
+1771	sinh_vien	Sinh viên năm nhất nên lưu những đầu mối nào trong điện thoại?	Bạn nên lưu bảo vệ, giáo vụ khoa, cố vấn học tập, ban cán sự lớp, helpdesk, ban quản lý ký túc xá nếu có ở nội trú và một vài bạn học thân. Đây là những liên hệ hữu ích nhất trong giai đoạn đầu.
+1772	sinh_vien	Em có nên chụp lại giấy tờ quan trọng và lưu trong máy không?	Có thể lưu bản chụp để tiện tra cứu khi cần, nhưng bạn vẫn phải giữ bản gốc cẩn thận. Khi lưu trên điện thoại hoặc đám mây, nên chú ý bảo mật thông tin cá nhân.
+1773	sinh_vien	Nếu em hay quên thông báo của trường thì có cách nào đỡ quên không?	Bạn nên tạo thói quen kiểm tra email, app trường, fanpage chính thức và nhóm lớp theo khung giờ cố định mỗi ngày. Có thể dùng lịch hoặc nhắc việc trên điện thoại để nhớ tốt hơn.
+1774	sinh_vien	Sinh viên mới có nên tạo một thư mục riêng trong điện thoại cho các app và link của trường không?	Rất nên, vì cách này giúp bạn truy cập nhanh các công cụ cần thiết như email, cổng sinh viên, bản đồ, lịch học và tài liệu học tập. Với năm nhất, tổ chức sớm sẽ giúp đỡ rối rất nhiều.
+1775	sinh_vien	Nếu em không rành công nghệ thì có khó dùng các hệ thống của trường không?	Ban đầu có thể hơi bỡ ngỡ, nhưng đa số hệ thống đều có hướng dẫn và bạn có thể hỏi bạn bè, helpdesk hoặc bộ phận hỗ trợ. Chỉ cần làm vài lần là bạn sẽ quen dần.
+1776	sinh_vien	Em nên hỏi ai khi gặp lỗi kỹ thuật như không vào được cổng sinh viên, wifi hay email?	Bạn nên liên hệ helpdesk, bộ phận CNTT, giáo vụ khoa hoặc đầu mối hỗ trợ chính thức của trường tùy loại lỗi. Khi hỏi, bạn nên mô tả rõ lỗi và chụp màn hình nếu có thể.
+1777	sinh_vien	Nếu em không biết hỏi ai khi gặp một vấn đề nhỏ trong trường thì làm sao?	Bạn có thể bắt đầu từ bảo vệ, giáo vụ, ban cán sự lớp, cố vấn học tập hoặc bạn học gần đó. Hỏi đúng người gần nhất thường giúp bạn tìm ra đầu mối phù hợp nhanh hơn.
+1778	sinh_vien	Sinh viên năm nhất có nên đi sớm hơn bình thường trong tháng đầu không?	Rất nên, vì bạn còn đang làm quen đường đi, bãi xe, phòng học và các dịch vụ trong trường. Đi sớm một chút sẽ giúp bạn đỡ stress và dễ xử lý khi có phát sinh.
+1779	sinh_vien	Trong trường có chỗ ngồi chờ khi chưa tới giờ học không?	Nhiều trường có sảnh, ghế chờ, thư viện, căn tin hoặc khu sinh hoạt chung để sinh viên ngồi giữa các tiết học. Sau một thời gian, bạn sẽ tự biết đâu là chỗ phù hợp nhất với mình.
+1780	sinh_vien	Nếu em thấy mọi thứ trong trường quá nhiều và khó nhớ thì nên bắt đầu từ đâu?	Bạn nên bắt đầu từ những thứ dùng hằng ngày như phòng học, bãi xe, thư viện, căn tin, wifi, email và các đầu mối hỗ trợ. Khi quen những thứ cơ bản rồi, các phần khác sẽ dễ nắm hơn nhiều.
+1781	sinh_vien	wifi truong la gi?	Bạn nên xem tên wifi chính thức trên website, hướng dẫn sinh viên hoặc hỏi bộ phận hỗ trợ để kết nối đúng mạng của trường.
+1782	sinh_vien	wifi truong ten j?	Bạn có thể xem hướng dẫn kết nối của trường hoặc hỏi helpdesk để biết đúng tên mạng wifi cần dùng.
+1783	sinh_vien	wifi truong dang nhap sao?	Nhiều trường dùng tài khoản sinh viên hoặc email trường để đăng nhập wifi. Bạn nên xem hướng dẫn chính thức hoặc hỏi bộ phận IT.
+1784	sinh_vien	wifi truong ko vao dc	Bạn nên kiểm tra lại tên wifi, tài khoản và mật khẩu trước. Nếu vẫn lỗi, hãy liên hệ bộ phận hỗ trợ kỹ thuật của trường.
+1785	sinh_vien	wifi truong yeu qua	Bạn có thể thử đổi chỗ ngồi, đăng nhập lại hoặc chuyển sang khu vực sóng ổn định hơn. Nếu lỗi kéo dài, nên báo bộ phận kỹ thuật.
+1786	sinh_vien	wifi ktx la wifi nao?	Bạn nên hỏi ban quản lý ký túc xá hoặc bộ phận IT vì wifi khu ở có thể khác với wifi khu học tập.
+1787	sinh_vien	wifi thu vien co xai chung ko?	Tùy hệ thống của trường, thư viện có thể dùng chung hoặc dùng mạng riêng. Bạn nên xem hướng dẫn theo từng khu vực.
+1788	sinh_vien	doi dt roi vao wifi lai sao?	Khi đổi điện thoại hoặc laptop, bạn thường cần đăng nhập lại wifi trường trên thiết bị mới. Nếu lỗi, hãy xem hướng dẫn kết nối hoặc hỏi helpdesk.
+1789	sinh_vien	email sv la j?	Email sinh viên là email do trường cấp để bạn nhận thông báo và dùng các dịch vụ học tập của trường.
+1790	sinh_vien	email truong la sao?	Đây là email do trường cấp cho sinh viên để phục vụ học tập, thông báo và xác thực các hệ thống liên quan.
+1791	sinh_vien	email sv o dau?	Bạn có thể xem trong cổng sinh viên, tài liệu nhập học hoặc hỏi bộ phận hỗ trợ tài khoản của trường.
+1792	sinh_vien	email sv dang nhap sao?	Bạn nên dùng đúng địa chỉ email trường và mật khẩu được cấp hoặc đã thiết lập theo hướng dẫn của trường.
+1793	sinh_vien	email sv ko vao dc	Bạn nên kiểm tra lại tài khoản và mật khẩu trước. Nếu vẫn không vào được, hãy liên hệ helpdesk hoặc bộ phận CNTT.
+1794	sinh_vien	quen mk email sv roi	Bạn nên làm theo hướng dẫn khôi phục mật khẩu của trường hoặc liên hệ helpdesk để được cấp lại.
+1795	sinh_vien	email truong co can check ko	Có, vì nhiều thông báo quan trọng của trường thường được gửi qua email sinh viên. Bạn nên kiểm tra thường xuyên.
+1796	sinh_vien	email sv va email ca nhan khac gi?	Email sinh viên do trường cấp và thường dùng cho các việc học tập, còn email cá nhân là tài khoản riêng của bạn.
+1797	sinh_vien	the sv dung lam gi?	Thẻ sinh viên thường dùng để xác nhận danh tính và có thể dùng cho thư viện, bãi xe hoặc một số dịch vụ trong trường.
+1798	sinh_vien	the sv de lam gi vay?	Thẻ sinh viên giúp xác nhận bạn là sinh viên của trường và có thể đi kèm nhiều tiện ích nội khu tùy từng nơi.
+1799	sinh_vien	the sv mat roi	Bạn nên báo ngay bộ phận phụ trách để được hướng dẫn khóa hoặc cấp lại thẻ nếu cần.
+1800	sinh_vien	mat the sv lam sao	Bạn nên liên hệ bộ phận công tác sinh viên hoặc nơi phụ trách cấp thẻ để làm thủ tục cấp lại.
+1801	sinh_vien	the sv hong roi	Bạn nên mang thẻ đến bộ phận phụ trách để được kiểm tra và hướng dẫn đổi hoặc cấp lại.
+1802	sinh_vien	the sv ko quet dc	Thẻ có thể đang lỗi hoặc chưa cập nhật đúng hệ thống. Bạn nên liên hệ bộ phận phụ trách để được kiểm tra.
+1803	sinh_vien	quen the sv vao thu vien dc ko?	Tùy quy định thư viện, bạn có thể bị hạn chế vào hoặc không mượn được sách nếu quên thẻ. Tốt nhất nên mang theo thẻ.
+1804	sinh_vien	the sv co vao thu vien dc ko?	Nhiều thư viện dùng thẻ sinh viên để xác minh người dùng hoặc hỗ trợ mượn sách. Bạn nên mang thẻ khi đến thư viện.
+1805	sinh_vien	the sv co gui xe dc ko?	Tùy hệ thống của trường, thẻ sinh viên có thể được dùng cho bãi xe hoặc các dịch vụ nội khu khác.
+1806	sinh_vien	thu vien o dau?	Bạn có thể xem bản đồ trường, website hoặc hỏi bảo vệ và bạn học để biết vị trí thư viện.
+1807	sinh_vien	thu vien mo may gio?	Giờ mở cửa thư viện tùy theo quy định của từng trường và từng ngày. Bạn nên xem thông báo chính thức trước khi đến.
+1808	sinh_vien	thu vien cn the ko?	Nhiều thư viện yêu cầu thẻ sinh viên hoặc tài khoản sinh viên để vào hoặc mượn sách. Bạn nên mang theo thẻ để thuận tiện.
+1809	sinh_vien	thu vien co may lanh ko	Điều này tùy cơ sở vật chất của từng thư viện. Bạn có thể đến xem trực tiếp hoặc hỏi sinh viên thường dùng thư viện.
+1810	sinh_vien	thu vien co cho hoc ko	Có, thư viện thường là nơi sinh viên tự học, tra cứu tài liệu và tìm không gian yên tĩnh để học.
+1811	sinh_vien	thu vien co phong hoc nhom ko	Một số thư viện có phòng học nhóm hoặc khu vực thảo luận riêng. Bạn nên hỏi xem có cần đặt chỗ trước không.
+1812	sinh_vien	thu vien co wifi ko	Nhiều thư viện có wifi cho sinh viên dùng học tập và tra cứu tài liệu. Nếu không vào được, bạn nên hỏi cách đăng nhập đúng.
+1813	sinh_vien	thu vien co duoc noi chuyen ko	Thông thường bạn nên giữ yên lặng hoặc chỉ nói nhỏ trong khu vực được phép để không ảnh hưởng người khác.
+1814	sinh_vien	thu vien co duoc an ko	Nhiều thư viện hạn chế hoặc không cho ăn uống để giữ vệ sinh và bảo quản tài liệu. Bạn nên xem nội quy cụ thể.
+1815	sinh_vien	muon sach sao?	Thông thường bạn cần có thẻ sinh viên hoặc tài khoản thư viện rồi làm theo hướng dẫn tại quầy hoặc hệ thống mượn sách.
+1816	sinh_vien	tra sach tre co sao ko?	Tùy nội quy thư viện, bạn có thể bị nhắc nhở, hạn chế quyền mượn hoặc xử lý theo quy định nếu trả trễ.
+1817	sinh_vien	mat sach thu vien roi	Bạn nên báo ngay cho thư viện để được hướng dẫn xử lý hoặc bồi hoàn theo quy định.
+1818	sinh_vien	in tai lieu o dau?	Bạn có thể in tại thư viện, phòng máy hoặc khu dịch vụ sinh viên nếu trường có bố trí điểm in.
+1819	sinh_vien	in o truong sao?	Bạn nên hỏi vị trí máy in hoặc khu in ấn trong trường rồi làm theo hướng dẫn của nơi đó.
+1820	sinh_vien	in tu laptop dc ko	Một số trường cho in từ laptop qua hệ thống web print hoặc mạng nội bộ. Bạn nên xem hướng dẫn của trường.
+1821	sinh_vien	in can tk sv ko	Nhiều hệ thống in trong trường yêu cầu tài khoản sinh viên hoặc tài khoản trường để gửi lệnh in.
+1822	sinh_vien	in xong ma may ko ra	Bạn nên kiểm tra lại file, máy in đã chọn, tài khoản đăng nhập và kết nối mạng. Nếu vẫn lỗi, hãy hỏi nhân viên hỗ trợ.
+1823	sinh_vien	photo o dau?	Bạn có thể hỏi thư viện, phòng máy, khu dịch vụ sinh viên hoặc bạn học để tìm chỗ photo gần nhất trong trường.
+1824	sinh_vien	sac dt o dau?	Một số thư viện, khu học chung hoặc không gian sinh viên có điểm sạc hoặc ổ cắm công cộng cho sinh viên.
+1825	sinh_vien	het pin giua buoi lam sao?	Bạn có thể dùng pin dự phòng hoặc tìm điểm sạc phù hợp trong thư viện hay khu học tập nếu có.
+1826	sinh_vien	trong truong co cho sac ko	Một số khu sinh hoạt chung có ổ cắm hoặc điểm sạc cho sinh viên. Bạn nên hỏi hoặc quan sát tại các khu học chung.
+1827	sinh_vien	sac laptop trong lop dc ko	Tùy lớp học và số lượng ổ cắm, nhiều nơi vẫn cho sạc thiết bị phục vụ học tập nếu dùng gọn gàng và không gây vướng.
+1828	sinh_vien	nghi trua o dau?	Bạn có thể nghỉ ở thư viện, căn tin, khu ghế ngồi chung hoặc không gian sinh viên nếu trường có bố trí phù hợp.
+1829	sinh_vien	trong truong co cho nam nghi ko	Tùy trường, có nơi có khu nghỉ hoặc khu sinh hoạt chung cho sinh viên giữa giờ. Bạn nên hỏi chỗ phù hợp và được phép sử dụng.
+1830	sinh_vien	ngoi cho tiet o dau?	Bạn có thể ngồi ở sảnh, thư viện, căn tin hoặc khu ghế chờ trong trường tùy vị trí thuận tiện.
+1831	sinh_vien	trong truong co cho ngoi hoc ko	Nhiều trường có khu học mở, thư viện hoặc bàn ghế chung để sinh viên ngồi học giữa các tiết.
+1832	sinh_vien	nha ve sinh o dau?	Bạn có thể xem bảng chỉ dẫn trong tòa nhà, sơ đồ trường hoặc hỏi bảo vệ và bạn học xung quanh.
+1833	sinh_vien	hoc day la ma ko biet wc o dau	Bạn có thể hỏi bạn học, giảng viên, bảo vệ hoặc nhìn bảng chỉ dẫn trong tòa nhà để tìm nhà vệ sinh gần nhất.
+1834	sinh_vien	can tin o dau?	Bạn có thể xem sơ đồ trường hoặc hỏi sinh viên khóa trên, bảo vệ để biết vị trí căn tin.
+1835	sinh_vien	can tin mo chua?	Giờ hoạt động của căn tin tùy theo từng nơi. Bạn nên đến xem trực tiếp hoặc hỏi người trong trường để biết khung giờ.
+1836	sinh_vien	trong truong co do an ko	Nhiều trường có căn tin, quầy nước hoặc khu ăn uống phục vụ sinh viên trong ngày học.
+1837	sinh_vien	co duoc an trong lop ko	Tùy nội quy lớp học và giảng viên, nhưng nhìn chung bạn nên hạn chế để giữ vệ sinh và tránh ảnh hưởng người khác.
+1838	sinh_vien	gui xe o dau?	Bạn có thể xem sơ đồ trường hoặc hỏi bảo vệ để tìm đúng khu gửi xe dành cho sinh viên.
+1839	sinh_vien	bai xe sv o dau?	Bạn nên hỏi bảo vệ, xem bảng hướng dẫn hoặc hỏi sinh viên khóa trên để biết vị trí bãi xe sinh viên.
+1840	sinh_vien	gui xe can the ko	Tùy hệ thống quản lý, bạn có thể dùng vé xe, thẻ sinh viên hoặc hình thức xác nhận khác để gửi xe.
+1841	sinh_vien	mat ve xe roi	Bạn nên báo ngay cho nhân viên bãi xe hoặc bảo vệ để được hướng dẫn xác minh và nhận xe theo quy định.
+1842	sinh_vien	the gui xe ko quet dc	Bạn nên báo nhân viên bãi xe hoặc bộ phận phụ trách thẻ để được kiểm tra lỗi và hỗ trợ.
+1843	sinh_vien	lay xe tre dc ko	Tùy giờ hoạt động của bãi xe, bạn có thể gặp khó khăn nếu đến lấy xe quá muộn. Nên hỏi trước nếu biết mình về trễ.
+1844	sinh_vien	trong truong co atm ko	Một số trường có ATM trong khuôn viên hoặc gần cổng trường. Bạn có thể hỏi bảo vệ hoặc bạn học để biết vị trí.
+1845	sinh_vien	rut tien gap o dau	Bạn có thể hỏi bảo vệ, căn tin, bãi xe hoặc dùng bản đồ điện thoại để tìm ATM gần nhất.
+1846	sinh_vien	map truong o dau?	Bạn có thể xem trên website trường, bảng sơ đồ trong campus hoặc hỏi sinh viên khóa trên.
+1847	sinh_vien	so do truong coi o dau	Bạn nên xem website trường, bảng hướng dẫn trong khuôn viên hoặc lưu ảnh sơ đồ nếu có.
+1848	sinh_vien	tim phong hoc sao?	Bạn nên xem mã phòng trên thời khóa biểu rồi đối chiếu với sơ đồ trường hoặc hỏi bảo vệ để được chỉ đường.
+1849	sinh_vien	phong nay nam day nao?	Bạn có thể hỏi bảo vệ, bạn học hoặc xem bảng chỉ dẫn trong tòa nhà để xác định đúng dãy và tầng.
+1850	sinh_vien	lac trong truong roi lam sao	Bạn nên bình tĩnh, xem lại sơ đồ trường hoặc hỏi người gần nhất như bảo vệ, sinh viên và cán bộ tại chỗ.
+1851	sinh_vien	ko biet hoi ai luon	Bạn có thể bắt đầu hỏi bảo vệ, giáo vụ, ban cán sự lớp hoặc bộ phận công tác sinh viên để được chỉ đúng đầu mối.
+1852	sinh_vien	ko biet lien he ai	Bạn nên hỏi đầu mối gần nhất như bảo vệ, giáo vụ, cố vấn học tập hoặc helpdesk tùy vấn đề bạn đang gặp.
+1853	sinh_vien	loi he thong thi hoi ai	Nếu lỗi liên quan đăng nhập, email, app, wifi hoặc cổng sinh viên, bạn nên liên hệ helpdesk hoặc bộ phận IT.
+1854	sinh_vien	hoc vu thi hoi ai	Nếu vấn đề liên quan đăng ký học phần, điều kiện học, lớp học hoặc thủ tục học vụ, bạn nên hỏi giáo vụ khoa hoặc phòng phụ trách học vụ.
+1855	sinh_vien	can gap nguoi ho tro gap thi sao	Bạn nên liên hệ đầu mối gần nhất như bảo vệ, giáo vụ, helpdesk hoặc phòng công tác sinh viên tùy loại vấn đề.
+1856	sinh_vien	app truong la app gi?	Bạn nên xem website trường, hướng dẫn sinh viên mới hoặc hỏi anh chị khóa trên để biết trường có app chính thức nào không.
+1857	sinh_vien	app truong tai o dau?	Nếu trường có ứng dụng riêng, bạn thường sẽ thấy trong hướng dẫn nhập học, website hoặc fanpage chính thức của trường.
+1858	sinh_vien	cai app truong lam gi?	App trường thường giúp xem lịch học, thông báo, tài khoản hoặc một số tiện ích dành cho sinh viên tùy từng trường.
+1859	sinh_vien	quen mk cttt portal roi	Bạn nên làm theo hướng dẫn khôi phục mật khẩu trên hệ thống hoặc liên hệ helpdesk để được hỗ trợ lấy lại tài khoản.
+1860	sinh_vien	ko vao duoc cong sv	Bạn nên kiểm tra lại tài khoản, mật khẩu và đường truyền mạng trước. Nếu vẫn lỗi, hãy liên hệ bộ phận hỗ trợ kỹ thuật.
+1861	sinh_vien	check lich hoc o dau	Bạn có thể xem trên cổng sinh viên, app trường hoặc hệ thống học vụ tùy cách trường đang triển khai.
+1862	sinh_vien	xem thong bao truong o dau	Bạn nên theo dõi email sinh viên, cổng sinh viên, app trường, website và fanpage chính thức để không bỏ sót thông báo.
+1863	sinh_vien	mat do roi hoi dau	Bạn nên hỏi bảo vệ, phòng công tác sinh viên hoặc nơi tiếp nhận đồ thất lạc nếu trường có.
+1864	sinh_vien	nhat duoc do cua nguoi ta thi dua dau	Bạn nên nộp cho bảo vệ hoặc nơi tiếp nhận đồ thất lạc để người mất dễ tìm lại hơn.
+1865	sinh_vien	dat hang ship vao truong dc ko	Điều này tùy quy định của trường hoặc ký túc xá. Bạn nên chắc rằng có điểm nhận phù hợp trước khi đặt.
+1866	sinh_vien	ship do vao ktx dc ko	Bạn nên hỏi ban quản lý ký túc xá hoặc bảo vệ vì mỗi nơi có cách nhận hàng khác nhau.
+1867	sinh_vien	trong truong co phong y te ko	Nhiều trường có phòng y tế hoặc đầu mối hỗ trợ sức khỏe cho sinh viên. Bạn nên tìm hiểu vị trí và cách liên hệ từ sớm.
+1868	sinh_vien	y te truong o dau	Bạn có thể xem bản đồ trường, website hoặc hỏi bảo vệ và bạn học để biết vị trí phòng y tế.
+1869	sinh_vien	met qua co cho nao nghi ko	Nếu mệt trong giờ học, bạn nên báo giảng viên hoặc người phụ trách lớp để được hỗ trợ nghỉ ngơi hoặc đến phòng y tế nếu cần.
+1870	sinh_vien	stress qua tim ai bay gio	Nếu áp lực kéo dài, bạn nên tìm người tin cậy, cố vấn học tập hoặc bộ phận hỗ trợ sinh viên để được chia sẻ và hỗ trợ sớm.
+1871	sinh_vien	wifi k dc	Bạn nên kiểm tra lại tên mạng, tài khoản và mật khẩu trước. Nếu vẫn không vào được, hãy liên hệ bộ phận hỗ trợ kỹ thuật của trường.
+1872	sinh_vien	wifi k vao dc	Bạn nên thử đăng nhập lại, đổi vị trí hoặc đổi mạng thử. Nếu lỗi kéo dài, hãy hỏi helpdesk hoặc bộ phận IT.
+1873	sinh_vien	wifi lag qua	Bạn có thể đổi chỗ ngồi, đăng nhập lại hoặc chờ bớt đông người dùng. Nếu vẫn chậm, nên báo bộ phận kỹ thuật.
+1874	sinh_vien	wifi loi hoai	Bạn nên kiểm tra thiết bị, tên mạng và tài khoản trước rồi liên hệ helpdesk nếu tình trạng lặp lại nhiều lần.
+1875	sinh_vien	wifi truong xai sao vay	Bạn thường cần dùng tài khoản sinh viên hoặc email trường để đăng nhập. Nếu chưa rõ, hãy xem hướng dẫn chính thức của trường.
+1876	sinh_vien	wifi nao la wifi xin	Bạn nên dùng đúng tên wifi chính thức do trường công bố trên website, app hoặc bảng hướng dẫn.
+1877	sinh_vien	k biet wifi nao cua truong	Bạn có thể hỏi bảo vệ, bạn học hoặc bộ phận IT để biết đúng tên mạng chính thức của trường.
+1878	sinh_vien	email sv dang nhap k dc	Bạn nên kiểm tra lại đúng tài khoản và mật khẩu. Nếu vẫn lỗi, hãy liên hệ helpdesk để được hỗ trợ.
+1879	sinh_vien	email sv loi roi	Bạn nên thử đăng xuất rồi đăng nhập lại. Nếu vẫn không được, hãy gửi lỗi cho bộ phận hỗ trợ kỹ thuật.
+1880	sinh_vien	quen mk roi	Bạn nên dùng chức năng khôi phục mật khẩu hoặc liên hệ helpdesk nếu tài khoản thuộc hệ thống của trường.
+1881	sinh_vien	quen mk email roi	Bạn nên làm theo hướng dẫn cấp lại mật khẩu email sinh viên hoặc liên hệ helpdesk để được hỗ trợ.
+1882	sinh_vien	quen mk portal roi	Bạn nên vào mục khôi phục tài khoản nếu có hoặc liên hệ bộ phận hỗ trợ kỹ thuật của trường.
+1883	sinh_vien	portal k vao dc	Bạn nên kiểm tra mạng, trình duyệt và tài khoản đăng nhập trước. Nếu vẫn lỗi, hãy liên hệ helpdesk.
+1884	sinh_vien	cong sv loi roi	Bạn nên thử đăng nhập lại hoặc đổi trình duyệt. Nếu vẫn không được, hãy báo bộ phận IT hoặc helpdesk.
+1885	sinh_vien	app truong loi	Bạn có thể thử cập nhật app, đăng xuất rồi đăng nhập lại. Nếu còn lỗi, nên báo bộ phận hỗ trợ kỹ thuật.
+1886	sinh_vien	myctus loi roi	Bạn nên thử đăng nhập lại, cập nhật app hoặc kiểm tra mạng. Nếu vẫn lỗi, hãy liên hệ helpdesk.
+1887	sinh_vien	app k vo dc	Bạn nên kiểm tra mạng và tài khoản trước. Nếu ứng dụng vẫn không vào được, hãy liên hệ helpdesk.
+1888	sinh_vien	k biet dang nhap bang cai gi	Nhiều hệ thống của trường dùng tài khoản sinh viên hoặc email trường để đăng nhập. Bạn nên xem hướng dẫn chính thức hoặc hỏi helpdesk.
+1889	sinh_vien	k biet tai khoan nao dang nhap	Bạn nên kiểm tra lại thông tin tài khoản trường đã được cấp hoặc hỏi bộ phận hỗ trợ để xác nhận đúng tài khoản.
+1890	sinh_vien	kho qua k biet dang nhap sao	Bạn nên xem hướng dẫn đăng nhập của trường hoặc hỏi helpdesk để được chỉ từng bước.
+1891	sinh_vien	the sv mat roi chet em	Bạn nên báo ngay bộ phận phụ trách thẻ để được hướng dẫn khóa hoặc cấp lại thẻ sớm.
+1892	sinh_vien	chet roi quen the sv	Bạn có thể sẽ bị bất tiện khi dùng thư viện hoặc một số dịch vụ. Nên liên hệ nơi phụ trách nếu cần xác minh tạm thời.
+1893	sinh_vien	quen the vao truong dc k	Tùy quy định từng nơi, bạn có thể vẫn vào được nhưng sẽ bất tiện khi dùng một số dịch vụ. Nên hỏi bảo vệ hoặc bộ phận phụ trách.
+1894	sinh_vien	quen the vao thu vien dc hong	Tùy nội quy thư viện, bạn có thể bị hạn chế vào hoặc không mượn được sách nếu quên thẻ.
+1895	sinh_vien	the em k quet dc	Bạn nên mang thẻ đến bộ phận phụ trách để kiểm tra và hướng dẫn xử lý hoặc cấp lại.
+1896	sinh_vien	the em hong roi	Bạn nên liên hệ bộ phận phụ trách thẻ sinh viên để được kiểm tra và làm thủ tục đổi hoặc cấp lại.
+1897	sinh_vien	mat the roi phai lam j	Bạn nên báo ngay nơi phụ trách để được hướng dẫn cấp lại và tránh ảnh hưởng tới các dịch vụ liên quan.
+1898	sinh_vien	k biet lam lai the o dau	Bạn nên hỏi phòng công tác sinh viên hoặc bộ phận quản lý thẻ để được chỉ đúng nơi làm lại.
+1899	sinh_vien	thu vien co mo k	Thư viện có thể mở theo khung giờ khác nhau tùy ngày. Bạn nên xem thông báo chính thức trước khi đến.
+1900	sinh_vien	thu vien dong chua	Bạn nên kiểm tra giờ phục vụ trên website, fanpage hoặc bảng thông báo của thư viện.
+1901	sinh_vien	thu vien con cho k	Tùy thời điểm, thư viện có thể đông hoặc vắng. Nếu cần chỗ yên tĩnh, bạn nên đi sớm hơn.
+1902	sinh_vien	thu vien dong qua troi	Bạn có thể thử đổi tầng, đổi khu vực hoặc chuyển sang khung giờ ít đông hơn.
+1903	sinh_vien	thu vien on qua	Nếu thư viện quá ồn, bạn có thể chuyển sang khu yên tĩnh hơn hoặc nhắc nhẹ nếu ở khu học chung.
+1904	sinh_vien	k biet muon sach sao	Bạn chỉ cần có thẻ hoặc tài khoản thư viện rồi hỏi quầy hướng dẫn cách mượn sách.
+1905	sinh_vien	mat sach roi ngai hoi	Bạn nên báo sớm cho thư viện để được hướng dẫn xử lý. Báo sớm thường dễ giải quyết hơn để lâu.
+1906	sinh_vien	tra sach tre chac toang	Tùy nội quy, bạn có thể bị nhắc nhở hoặc xử lý theo quy định. Bạn nên trả sớm nhất có thể và hỏi cách xử lý nếu đã quá hạn.
+1907	sinh_vien	in gap qua troi	Bạn nên đến điểm in gần nhất trong trường như thư viện, phòng máy hoặc khu dịch vụ sinh viên.
+1908	sinh_vien	k biet in o dau luon	Bạn có thể hỏi thư viện, phòng máy, bảo vệ hoặc bạn học để tìm chỗ in gần nhất.
+1909	sinh_vien	in k ra roi	Bạn nên kiểm tra lại file, tài khoản đăng nhập, kết nối mạng và máy in đã chọn rồi hỏi người phụ trách nếu vẫn lỗi.
+1910	sinh_vien	in tu dt dc hong	Một số nơi có thể hỗ trợ in từ điện thoại, nhưng nhiều hệ thống vẫn tiện hơn khi dùng laptop hoặc USB. Bạn nên hỏi chỗ in cụ thể.
+1911	sinh_vien	photo o dau vay troi	Bạn có thể hỏi thư viện, khu dịch vụ sinh viên hoặc bạn học để tìm điểm photo gần nhất.
+1912	sinh_vien	het pin roi cuu em	Bạn có thể tìm điểm sạc trong thư viện, khu học chung hoặc dùng pin dự phòng nếu có.
+1913	sinh_vien	het pin giua buoi chan doi	Bạn nên tranh thủ tìm chỗ sạc phù hợp hoặc dùng pin dự phòng nếu học còn dài.
+1914	sinh_vien	sac dt o dau vay	Bạn có thể hỏi tại thư viện, khu học chung hoặc quan sát các khu có ổ cắm cho sinh viên.
+1915	sinh_vien	sac laptop o dau	Bạn có thể sạc ở lớp, thư viện hoặc khu học chung nếu có ổ cắm và được phép sử dụng.
+1916	sinh_vien	k co o cam luon	Bạn nên sạc đầy trước khi đi học, mang pin dự phòng hoặc tìm khu học chung có ổ cắm.
+1917	sinh_vien	can tin co gi an k	Nhiều trường có căn tin hoặc quầy ăn uống cho sinh viên trong ngày học. Bạn có thể ghé trực tiếp để xem món và giờ bán.
+1918	sinh_vien	do an trong truong o dau	Bạn có thể tìm ở căn tin, quầy nước hoặc khu ăn uống trong trường nếu có.
+1919	sinh_vien	doi qua ma k biet an dau	Bạn nên hỏi căn tin gần nhất, quầy nước hoặc bạn học để tìm chỗ ăn nhanh trong trường.
+1920	sinh_vien	can tin dong nguoi qua	Bạn có thể đi sớm hơn, trễ hơn một chút hoặc tìm khu ăn uống khác nếu trường có nhiều điểm.
+1921	sinh_vien	k biet wc o dau	Bạn có thể hỏi bảo vệ, bạn học hoặc xem bảng chỉ dẫn trong tòa nhà để tìm nhà vệ sinh gần nhất.
+1922	sinh_vien	muon tim wc ma ngai hoi	Bạn có thể nhìn bảng chỉ dẫn trong tòa nhà hoặc hỏi nhẹ bảo vệ và bạn học gần đó.
+1923	sinh_vien	nha ve sinh dau ta	Bạn có thể xem sơ đồ tòa nhà hoặc hỏi người gần nhất để tìm nhà vệ sinh nhanh hơn.
+1924	sinh_vien	nghi trua o dau cho do met	Bạn có thể nghỉ ở thư viện, khu ghế ngồi chung, căn tin hoặc không gian sinh viên nếu phù hợp.
+1925	sinh_vien	trong truong co cho nap k	Một số trường có khu nghỉ hoặc khu sinh hoạt chung cho sinh viên giữa các tiết. Bạn nên hỏi chỗ phù hợp.
+1926	sinh_vien	k biet ngoi dau cho toi gio hoc	Bạn có thể ngồi ở sảnh, thư viện, căn tin hoặc khu ghế chờ trong trường.
+1927	sinh_vien	lac roi	Bạn nên bình tĩnh, xem sơ đồ trường hoặc hỏi bảo vệ và sinh viên xung quanh để được chỉ đường.
+1928	sinh_vien	lac duong trong truong luon	Bạn có thể hỏi bảo vệ, bạn học hoặc xem sơ đồ trường để tìm lại đường nhanh hơn.
+1929	sinh_vien	k biet phong nay o dau	Bạn nên xem mã phòng trên lịch học rồi hỏi bảo vệ hoặc đối chiếu với sơ đồ trường.
+1930	sinh_vien	map truong dau roi	Bạn có thể xem trên website trường, bảng chỉ dẫn trong khuôn viên hoặc hỏi bạn học.
+1931	sinh_vien	bai xe o dau troi	Bạn có thể hỏi bảo vệ hoặc xem bảng hướng dẫn để tìm đúng khu gửi xe sinh viên.
+1932	sinh_vien	gui xe sao vay	Bạn làm theo hướng dẫn của bãi xe, dùng vé hoặc thẻ theo quy định rồi gửi đúng khu dành cho sinh viên.
+1933	sinh_vien	mat ve xe chet roi	Bạn nên báo ngay cho nhân viên bãi xe để được hướng dẫn xác minh và nhận xe theo quy định.
+1934	sinh_vien	the xe k quet dc	Bạn nên báo nhân viên bãi xe hoặc bộ phận phụ trách thẻ để được kiểm tra và hỗ trợ.
+1935	sinh_vien	lay xe tre co bi sao k	Tùy giờ hoạt động của bãi xe, bạn có thể gặp khó khăn nếu lấy xe quá muộn. Nên hỏi trước nếu biết mình sẽ về trễ.
+1936	sinh_vien	co atm hong	Bạn có thể hỏi bảo vệ, bạn học hoặc tìm quanh cổng trường xem có ATM gần đó không.
+1937	sinh_vien	rut tien o dau troi	Bạn nên hỏi bảo vệ, căn tin hoặc dùng bản đồ điện thoại để tìm ATM gần nhất.
+1938	sinh_vien	mat do roi ngu qua	Bạn nên hỏi bảo vệ, nơi tiếp nhận đồ thất lạc hoặc quay lại những chỗ vừa đi qua để tìm sớm.
+1939	sinh_vien	roi vi roi phai sao	Bạn nên hỏi ngay bảo vệ, bãi xe, lớp học vừa đi qua hoặc nơi tiếp nhận đồ thất lạc nếu có.
+1940	sinh_vien	nhat duoc do ma ngai nop	Bạn nên nộp cho bảo vệ hoặc nơi tiếp nhận đồ thất lạc để người mất dễ tìm lại.
+1941	sinh_vien	k biet hoi ai het	Bạn có thể bắt đầu từ bảo vệ, giáo vụ, ban cán sự lớp hoặc bộ phận công tác sinh viên.
+1942	sinh_vien	em hoi cai nay co ky k ta	Không sao đâu, những việc nhỏ trong trường là chuyện sinh viên nào cũng hay gặp. Bạn cứ hỏi đúng đầu mối là được.
+1943	sinh_vien	em hoi hoi ngu xiu dc k	Có chứ, hỏi sớm còn tốt hơn để bị vướng lâu. Bạn có thể bắt đầu từ người gần nhất như bảo vệ, giáo vụ hoặc bạn học.
+1944	sinh_vien	em ngai hoi qua	Bạn có thể hỏi ngắn gọn người gần nhất hoặc xem trước trên kênh chính thức của trường nếu có.
+1945	sinh_vien	cai nay hoi ai cho do ky	Bạn nên chọn đúng đầu mối như helpdesk cho lỗi hệ thống, giáo vụ cho học vụ, thư viện cho sách và dịch vụ thư viện.
+1946	sinh_vien	hoi ai cho nhanh	Nếu là lỗi tài khoản hay hệ thống, bạn hỏi helpdesk. Nếu là thủ tục học tập hoặc lớp học, bạn hỏi giáo vụ khoa.
+1947	sinh_vien	hoc vu hay it vay ta	Nếu vấn đề liên quan đăng ký học phần, lịch học, điểm hay điều kiện môn, bạn nên hỏi giáo vụ. Nếu là lỗi đăng nhập, app, email hay wifi thì hỏi IT/helpdesk.
+1948	sinh_vien	k biet loi do em hay do he thong	Bạn thử kiểm tra lại thao tác và đăng nhập lại trước. Nếu vẫn lỗi, hãy chụp màn hình rồi hỏi helpdesk để họ kiểm tra.
+1949	sinh_vien	hoi ban be cung k biet luôn	Nếu bạn bè cũng không rõ, bạn nên hỏi đầu mối chính thức như giáo vụ, helpdesk hoặc phòng công tác sinh viên.
+1950	sinh_vien	helpdesk o dau vay	Bạn nên xem trên website hỗ trợ của trường hoặc hỏi bộ phận IT để biết đúng kênh liên hệ.
+1951	sinh_vien	mo ticket sao vay	Bạn vào trang hỗ trợ của trường, tạo yêu cầu và mô tả lỗi rõ ràng kèm ảnh chụp màn hình nếu có.
+1952	sinh_vien	k biet mo ta loi sao cho dung	Bạn chỉ cần ghi rõ lúc nào bị lỗi, đang làm gì, lỗi hiện ra thế nào và gửi kèm ảnh màn hình nếu có.
+1953	sinh_vien	chup man hinh roi gui ai	Nếu lỗi liên quan hệ thống, bạn gửi cho helpdesk hoặc bộ phận IT để họ kiểm tra nhanh hơn.
+1954	sinh_vien	em so hoi sai nguoi qua	Bạn cứ phân theo loại việc: học vụ hỏi giáo vụ, kỹ thuật hỏi helpdesk, dịch vụ hỏi đúng đơn vị phụ trách.
+1955	sinh_vien	em hoi tren troi duoi dat xiu dc hong	Được chứ, miễn là bạn mô tả đúng vấn đề mình đang gặp thì người hỗ trợ sẽ chỉ tiếp cho bạn.
+1956	sinh_vien	em moi vo nen ngu ngu	Điều này rất bình thường với sinh viên mới. Bạn cứ hỏi từng việc một rồi sẽ quen rất nhanh.
+1957	sinh_vien	em moi vo nen k biet gi het	Không sao cả, giai đoạn đầu ai cũng dễ bị ngợp. Bạn nên bắt đầu từ những đầu mối gần nhất như bạn học, bảo vệ, giáo vụ.
+1958	sinh_vien	cuu em voi k biet lam sao	Bạn nên bình tĩnh xác định mình đang vướng chuyện học vụ, kỹ thuật hay dịch vụ trong trường rồi hỏi đúng đầu mối.
+1959	sinh_vien	toang roi k dang nhap dc	Bạn nên kiểm tra lại tài khoản, mật khẩu, mạng và trình duyệt trước. Nếu vẫn lỗi, hãy liên hệ helpdesk.
+1960	sinh_vien	chiu luon roi khong biet xu ly sao	Bạn cứ bắt đầu từ người gần nhất hoặc đầu mối chính thức của trường, đừng để khó khăn nhỏ kéo dài quá lâu.
 
 
